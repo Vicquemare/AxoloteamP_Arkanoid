@@ -6,7 +6,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;[Jugabilidad](#jugabilidad)<br>
 [Requerimientos técnicos](#requerimientos-técnicos)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Conexión a BD](#conexión-a-bd)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[Paradigma orientado a objetos](#paradigma-orientado-a-objetos)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[Implementación del MVC](#implementación-del-mvc)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[Buenas prácticas](#buenas-prácticas)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[Repositorio de GitHub](#repositorio-de-github)<br>
 [Requerimientos metodológicos](#requerimientos-metodológicos)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[Herramientas](#herramientas)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[Problemas en flujo de trabajo](#problemas-en-flujo-de-trabajo)<br>
 [Documentación](#documentación)<br>
 
 ## Definición formal
@@ -27,7 +33,7 @@ Deberá solicitar un nombre de jugador a través de una pequeña ventana o cambi
 
 **Puntajes**<br>
 Se mostrará una ventana externa conteniendo un **Top 10** mejores puntajes, mostrando el nombre del jugador/usuario y el puntaje obtenido.
-![Top](./Res/top.png)
+![Top](./Res/Top.png)
 
 
 ### Jugabilidad
