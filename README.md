@@ -1,6 +1,6 @@
 # Proyecto final - POO
 
-## Notas
+## Avisos
 * El manual técnico cambia entre los grupos de tres y cuatro personas, leer sección de [documentación](#documentación)
 * Entrega primer avance - **sábado 13 de junio (sin ponderación)**
 * Entrega final - **lunes 22 de junio**
