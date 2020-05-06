@@ -18,7 +18,7 @@
 ## Definición formal
 El proyecto final de la materia consistirá en la recreación de un juego clásico, **Arkanoid**. Para las personas que nunca lo han jugado o escuchado, acá un breve video.
 
-<iframe width="688" height="516" src="https://www.youtube.com/embed/3luUb7WEm7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Video](./Res/fake.png)](https://www.youtube.com/watch?v=3luUb7WEm7k&feature=emb_logo)
 
 Se pretende que el juego sea totalmente funcional, y que conste de un único nivel a su creatividad. El programa como tal deberá contener los siguientes aspectos:
 
