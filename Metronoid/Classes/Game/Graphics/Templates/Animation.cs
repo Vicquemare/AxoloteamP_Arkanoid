@@ -107,7 +107,7 @@ namespace Metronoid.Classes.Game.Graphics.Templates
             return _frames[_currentFrame].Frames;
         }
 
-        public void update()
+        public void Update()
         {
             if (!_stopped)
             {
