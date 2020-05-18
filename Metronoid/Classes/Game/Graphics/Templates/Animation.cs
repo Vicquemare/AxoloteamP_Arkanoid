@@ -78,7 +78,7 @@ namespace Metronoid.Classes.Game.Graphics.Templates
             _currentFrame = 0;
         }
 
-        //////////////Aniadido////////////////////
+        //////////////Añadido////////////////////
         public int NumTotalDeFrames()
         {
             return _totalFrames;
