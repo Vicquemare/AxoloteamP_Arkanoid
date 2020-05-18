@@ -23,11 +23,15 @@ namespace Metronoid
         {
             Graphics g = this.CreateGraphics();
            g.DrawImage(megaman.anim.GetSprite(), 60, 10);
+           
+           megaman.anim.Start();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            megaman.anim.Update();
+            Graphics g = this.CreateGraphics();
+            g.DrawImage(megaman.anim.GetSprite(), 60, 10);
         }
     }
 }
