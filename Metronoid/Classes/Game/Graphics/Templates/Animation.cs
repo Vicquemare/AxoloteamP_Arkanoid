@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Metronoid.Classes.Game.Graphics.Templates
 {
-    public class Animations
+    public class Animation
     {
         private int _frameCount; // Counts ticks for change
         private int _frameDelay; // frame delay 1-12 (You will have to play around with this)
@@ -17,7 +17,7 @@ namespace Metronoid.Classes.Game.Graphics.Templates
 
         private List<Frame> _frames = new List<Frame>(); // Arraylist of frames 
 
-        public Animations(Bitmap[] frames, int frameDelay)
+        public Animation(Bitmap[] frames, int frameDelay)
         {
             _frameDelay = frameDelay;
             _stopped = true;

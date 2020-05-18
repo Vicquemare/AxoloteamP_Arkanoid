@@ -51,6 +51,8 @@
         <Compile Include="Classes\Game\Graphics\Templates\Animation.cs" />
         <Compile Include="Classes\Game\Graphics\Templates\Frame.cs" />
         <Compile Include="Classes\Game\Graphics\Templates\Sprite.cs" />
+        <Compile Include="Classes\Game\Levels\Level.cs" />
+        <Compile Include="Classes\Game\Levels\Level1.cs" />
         <Compile Include="Form1.cs">
             <SubType>Form</SubType>
         </Compile>
@@ -86,7 +88,6 @@
     </ItemGroup>
     <ItemGroup>
       <Folder Include="Classes\Controllers" />
-      <Folder Include="Classes\Game\Levels" />
       <Folder Include="Classes\Models" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

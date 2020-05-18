@@ -20,7 +20,10 @@
               <e p="Sprite.cs" t="Include" />
             </e>
           </e>
-          <e p="Levels" t="Include" />
+          <e p="Levels" t="Include">
+            <e p="Level.cs" t="Include" />
+            <e p="Level1.cs" t="Include" />
+          </e>
         </e>
         <e p="Models" t="Include" />
       </e>
