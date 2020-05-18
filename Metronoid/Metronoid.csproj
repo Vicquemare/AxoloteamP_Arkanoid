@@ -47,6 +47,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Classes\Game\Engine.cs" />
+        <Compile Include="Classes\Game\Graphics\Animations\Megaman.cs" />
         <Compile Include="Classes\Game\Graphics\Templates\Animation.cs" />
         <Compile Include="Classes\Game\Graphics\Templates\Frame.cs" />
         <Compile Include="Classes\Game\Graphics\Templates\Sprite.cs" />
@@ -85,7 +86,6 @@
     </ItemGroup>
     <ItemGroup>
       <Folder Include="Classes\Controllers" />
-      <Folder Include="Classes\Game\Graphics\Animations" />
       <Folder Include="Classes\Game\Levels" />
       <Folder Include="Classes\Models" />
     </ItemGroup>

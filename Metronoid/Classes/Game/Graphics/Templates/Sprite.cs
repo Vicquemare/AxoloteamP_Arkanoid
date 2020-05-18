@@ -49,10 +49,10 @@ namespace Metronoid.Classes.Game.Graphics.Templates
                 case "ataqueEne":
                     _tileSize = 211;
                     break;
-                case "anim":
+                case "megaman":
                     _notSquare = true;
-                    _tileSizeX = 1032;
-                    _tileSizeY = 753;
+                    _tileSizeX = 164;
+                    _tileSizeY = 175;
                     break;
                 case "enemigos2":
                     _tileSize = 250;
