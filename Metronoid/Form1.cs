@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Metronoid.Classes.Game.Graphics.Templates;
 
 namespace Metronoid
 {
@@ -15,6 +16,12 @@ namespace Metronoid
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Graphics g = this.CreateGraphics();
+            g.DrawImage(Sprite.getSprite(0, 0, "akali"), 60, 10);
         }
     }
 }

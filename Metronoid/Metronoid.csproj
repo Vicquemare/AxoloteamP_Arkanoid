@@ -47,6 +47,9 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Classes\Game\Engine.cs" />
+        <Compile Include="Classes\Game\Graphics\Templates\Animation.cs" />
+        <Compile Include="Classes\Game\Graphics\Templates\Frame.cs" />
+        <Compile Include="Classes\Game\Graphics\Templates\Sprite.cs" />
         <Compile Include="Form1.cs">
             <SubType>Form</SubType>
         </Compile>
@@ -55,6 +58,9 @@
         </Compile>
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <EmbeddedResource Include="Form1.resx">
+          <DependentUpon>Form1.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -79,7 +85,7 @@
     </ItemGroup>
     <ItemGroup>
       <Folder Include="Classes\Controllers" />
-      <Folder Include="Classes\Game\Graphics" />
+      <Folder Include="Classes\Game\Graphics\Animations" />
       <Folder Include="Classes\Game\Levels" />
       <Folder Include="Classes\Models" />
     </ItemGroup>
