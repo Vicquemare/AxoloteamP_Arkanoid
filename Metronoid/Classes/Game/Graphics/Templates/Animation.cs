@@ -22,7 +22,7 @@ namespace Metronoid.Classes.Game.Graphics.Templates
             _frameDelay = frameDelay;
             _stopped = true;
 
-            for (int i = 0; i < _frames.Count; i++)
+            for (int i = 0; i < frames.Length; i++)
             {
                 AddFrame(frames[i], frameDelay);
             }
