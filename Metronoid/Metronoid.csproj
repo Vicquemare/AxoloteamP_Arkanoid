@@ -46,6 +46,8 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Classes\Game\Elements\AnimBrick.cs" />
+        <Compile Include="Classes\Game\Elements\AnimMorphoBall.cs" />
         <Compile Include="Classes\Game\Elements\Brick.cs" />
         <Compile Include="Classes\Game\Elements\Player.cs" />
         <Compile Include="Classes\Game\Engine.cs" />

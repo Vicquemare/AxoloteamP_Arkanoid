@@ -32,7 +32,7 @@ namespace Metronoid.Classes.Game.Graphics.Templates
         public static Bitmap getSprite(int xGrid, int yGrid, String spritesheet) {
 
             // if (spriteSheet == null) {
-            spriteSheet = loadSprite(spritesheet + ".png");
+            spriteSheet = loadSprite("Resources/Sprites/"+ spritesheet + ".png");
             //}
 
             switch (spritesheet)
@@ -49,10 +49,18 @@ namespace Metronoid.Classes.Game.Graphics.Templates
                 case "ataqueEne":
                     _tileSize = 211;
                     break;
+                case "morphoball":
+                    _tileSize = 20;
+                    break;
                 case "megaman":
                     _notSquare = true;
                     _tileSizeX = 164;
                     _tileSizeY = 175;
+                    break;
+                case "1":
+                    _notSquare = true;
+                    _tileSizeX = 98;
+                    _tileSizeY = 27;
                     break;
                 case "enemigos2":
                     _tileSize = 250;
