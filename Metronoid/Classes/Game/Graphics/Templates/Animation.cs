@@ -13,7 +13,7 @@ namespace Metronoid.Classes.Game.Graphics.Templates
         private int _currentFrame; // animations current frame
         private int _animationDirection; // animation direction (i.e counting forward or backward)
         private int _totalFrames; // total amount of frames for your animation
-        private bool _stopped; // has animations stopped
+        private bool _stopped; // has animations stoppedplayer
 
         private List<Frame> _frames = new List<Frame>(); // Arraylist of frames 
 

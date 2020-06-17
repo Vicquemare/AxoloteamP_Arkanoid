@@ -37,18 +37,6 @@ namespace Metronoid.Classes.Game.Graphics.Templates
 
             switch (spritesheet)
             {
-                case "aideen":
-                    _tileSize = 211;
-                    break;
-                case "enemigos1":
-                    _tileSize = 250;
-                    break;
-                case "akali":
-                    _tileSize = 336;
-                    break;
-                case "ataqueEne":
-                    _tileSize = 211;
-                    break;
                 case "morphoball":
                     _tileSize = 20;
                     break;
@@ -62,8 +50,15 @@ namespace Metronoid.Classes.Game.Graphics.Templates
                     _tileSizeX = 98;
                     _tileSizeY = 27;
                     break;
-                case "enemigos2":
-                    _tileSize = 250;
+                case "player":
+                    _notSquare = true;
+                    _tileSizeX = 84;
+                    _tileSizeY = 22;
+                    break;
+                case "2":
+                    _notSquare = true;
+                    _tileSizeX = 47;
+                    _tileSizeY = 13;
                     break;
             }
 

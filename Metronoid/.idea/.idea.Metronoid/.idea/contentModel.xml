@@ -12,6 +12,7 @@
           <e p="Elements" t="Include">
             <e p="AnimBrick.cs" t="Include" />
             <e p="AnimMorphoBall.cs" t="Include" />
+            <e p="AnimPlayer.cs" t="Include" />
             <e p="Brick.cs" t="Include" />
             <e p="Player.cs" t="Include" />
           </e>
