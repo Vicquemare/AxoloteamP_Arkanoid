@@ -19,28 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d9d210-860d-4c97-a73d-4bc09826f753" name="Default Changelist" comment="No me odies awa">
-      <change afterPath="$PROJECT_DIR$/Classes/Game/Elements/Brick.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Classes/Game/Elements/Player.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MainGame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Metronoid/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Metronoid/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="e7d9d210-860d-4c97-a73d-4bc09826f753" name="Default Changelist" comment="modificacion del motor">
+      <change afterPath="$PROJECT_DIR$/MainGame.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainGame.resx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Metronoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Metronoid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Metronoid/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Metronoid/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Game/Engine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Game/Engine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Game/Graphics/Animations/Megaman.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Game/Graphics/Animations/Megaman.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Game/Levels/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Game/Levels/Level.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Game/Levels/Level1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Game/Levels/Level1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Game/Elements/Brick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Game/Elements/Brick.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form1.resx" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Metronoid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Metronoid.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/Metronoid.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Metronoid.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/Metronoid.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Metronoid.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.Form1.resources" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.Form1.resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.csproj.GenerateResource.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainGame.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,11 +65,11 @@
         <option value="$PROJECT_DIR$/Classes/Game/Graphics/Elements/Player.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/Engine.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/Levels/Level.cs" />
-        <option value="$PROJECT_DIR$/Form1.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/Levels/Level1.cs" />
+        <option value="$PROJECT_DIR$/Classes/Game/Elements/Player.cs" />
+        <option value="$PROJECT_DIR$/Form1.cs" />
         <option value="$PROJECT_DIR$/MainGame.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/Elements/Brick.cs" />
-        <option value="$PROJECT_DIR$/Classes/Game/Elements/Player.cs" />
       </list>
     </option>
   </component>
@@ -137,7 +122,7 @@
       <workItem from="1589758786967" duration="5636000" />
       <workItem from="1589773949341" duration="9900000" />
       <workItem from="1592364162288" duration="11410000" />
-      <workItem from="1592419429043" duration="4636000" />
+      <workItem from="1592419429043" duration="6484000" />
     </task>
     <task id="LOCAL-00001" summary="Hola ashiock">
       <created>1589761260196</created>
@@ -167,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589784239394</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="modificacion del motor">
+      <created>1592427137676</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592427137676</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +185,8 @@
     <MESSAGE value="awa de ewe" />
     <MESSAGE value="megaman se mueve" />
     <MESSAGE value="No me odies awa" />
-    <option name="LAST_COMMIT_MESSAGE" value="No me odies awa" />
+    <MESSAGE value="modificacion del motor" />
+    <option name="LAST_COMMIT_MESSAGE" value="modificacion del motor" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589762863312">
@@ -280,6 +273,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1592377559253" />
+    <state x="479" y="102" key="RiderGenerateDialog" timestamp="1592427958359">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="479" y="102" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1592427958359" />
     <state x="530" y="123" key="RollbackChangesDialog" timestamp="1589779011566">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -292,10 +289,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1589781126205" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1589784266028">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1592427149221">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589784266028" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592427149221" />
     <state x="459" y="200" key="git4idea.merge.GitPullDialog" timestamp="1589780313814">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

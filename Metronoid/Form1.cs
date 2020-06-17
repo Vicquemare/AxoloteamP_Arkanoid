@@ -23,6 +23,7 @@ namespace Metronoid
         }
         Megaman megaman = new Megaman();
         private Engine _engine = null;
+        private readonly Random _random = new Random();
         private void button1_Click(object sender, EventArgs e)
         {
             //_engine = new Engine(this);

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 using Metronoid.Classes.Game;
 using Metronoid.Classes.Game.Graphics.Elements;
@@ -20,6 +21,8 @@ namespace Metronoid
         private Engine _engine = null;
         private Level _lvlInfo = null; 
         private Brick[,] _bricks;
+        private readonly Random _random = new Random();
+
         private void MainGame_Load(object sender, EventArgs e)
         {
             
@@ -49,6 +52,15 @@ namespace Metronoid
         private void LoadBricks()
         {
             _bricks = new Brick[_lvlInfo.YAxis, _lvlInfo.XAxis];
+            for (int i = 0; i < _lvlInfo.YAxis; i++)
+            {
+                for (int j = 0; j < _lvlInfo.XAxis; j++)
+                {
+                    Rectangle aux = new Rectangle(j, i, _lvlInfo.BrickWidth, _lvlInfo.BrickHeight);
+                    int type = _random.Next(1, 4);
+                    _bricks[i ,j] = new Brick(aux, type);
+                }
+            }
         }
     }
 }
