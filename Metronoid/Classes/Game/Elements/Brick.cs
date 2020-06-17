@@ -6,11 +6,13 @@ namespace Metronoid.Classes.Game.Graphics.Elements
     {
         public Rectangle Hitbox;
         public int Type;
+        public bool Active;
 
         public Brick(Rectangle hitbox, int type)
         {
             Hitbox = hitbox;
-            Type = type;++
+            Type = type;
+            Active = true;
         }
     }
 }
