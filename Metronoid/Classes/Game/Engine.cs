@@ -15,12 +15,12 @@ namespace Metronoid.Classes.Game
         /// Status of GameLoop
         /// </summary>
         public bool Running { get; private set; }
-        public Engine(Form1 frm)
+        public Engine(MainGame frm)
         {
             _frm = frm;
         }
 
-        private Form1 _frm;
+        private MainGame _frm;
         /// <summary>
         /// Load Game into GameLoop
         /// </summary>
@@ -60,7 +60,8 @@ namespace Metronoid.Classes.Game
 
         public void Update(long gameTime)
         {
-            _frm.UpdateGraphics();
+            _frm.UpdateStage(); //Hacer la clase de update de esta cosa
+            
         }
 
         /// <summary>

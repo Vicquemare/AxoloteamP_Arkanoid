@@ -9,6 +9,10 @@
       <e p="Classes" t="Include">
         <e p="Controllers" t="Include" />
         <e p="Game" t="Include">
+          <e p="Elements" t="Include">
+            <e p="Brick.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+          </e>
           <e p="Engine.cs" t="Include" />
           <e p="Graphics" t="Include">
             <e p="Animations" t="Include">
@@ -30,6 +34,9 @@
       <e p="Form1.cs" t="Include" />
       <e p="Form1.Designer.cs" t="Include" />
       <e p="Form1.resx" t="Include" />
+      <e p="MainGame.cs" t="Include" />
+      <e p="MainGame.Designer.cs" t="Include" />
+      <e p="MainGame.resx" t="Include" />
       <e p="Metronoid.csproj" t="IncludeRecursive" />
       <e p="Metronoid.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
