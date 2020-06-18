@@ -38,7 +38,7 @@ namespace Metronoid.Classes.Game.Graphics.Templates
             switch (spritesheet)
             {
                 case "morphball":
-                    _tileSize = 20;
+                    _tileSize = 121;
                     break;
                 case "megaman":
                     _notSquare = true;
@@ -52,8 +52,8 @@ namespace Metronoid.Classes.Game.Graphics.Templates
                     break;
                 case "player":
                     _notSquare = true;
-                    _tileSizeX = 84;
-                    _tileSizeY = 22;
+                    _tileSizeX = 137;
+                    _tileSizeY = 38;
                     break;
                 case "2":
                     _notSquare = true;
@@ -64,6 +64,31 @@ namespace Metronoid.Classes.Game.Graphics.Templates
                     _notSquare = true;
                     _tileSizeX = 816;
                     _tileSizeY = 480;
+                    break;
+                case "enemy1":
+                    _notSquare = true;
+                    _tileSizeX = 40;
+                    _tileSizeY = 15;
+                    break;
+                case "enemy2":
+                    _notSquare = true;
+                    _tileSizeX = 40;
+                    _tileSizeY = 15;
+                    break;
+                case "enemy3":
+                    _notSquare = true;
+                    _tileSizeX = 40;
+                    _tileSizeY = 15;
+                    break;
+                case "portrait":
+                    _notSquare = true;
+                    _tileSizeX = 92;
+                    _tileSizeY = 92;
+                    break;
+                case "UI":
+                    _notSquare = true;
+                    _tileSizeX = 1863;
+                    _tileSizeY = 538;
                     break;
             }
 

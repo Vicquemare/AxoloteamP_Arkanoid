@@ -8,7 +8,7 @@ namespace Metronoid.Classes.Game.Elements
 
         public Player(Size clientSize)
         {
-            Hitbox = new Rectangle(0, (int) (clientSize.Height * 0.9), (int) (clientSize.Width * 0.1), (int) (clientSize.Height * 0.05));
+            Hitbox = new Rectangle(0, (int) (clientSize.Height * 0.8), (int) (clientSize.Width * 0.1), (int) (clientSize.Height * 0.05));
         }
     }
 }
