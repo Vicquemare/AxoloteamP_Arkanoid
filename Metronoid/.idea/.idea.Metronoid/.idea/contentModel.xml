@@ -10,10 +10,12 @@
         <e p="Controllers" t="Include" />
         <e p="Game" t="Include">
           <e p="Elements" t="Include">
+            <e p="AnimBackground.cs" t="Include" />
             <e p="AnimBrick.cs" t="Include" />
-            <e p="AnimMorphoBall.cs" t="Include" />
+            <e p="AnimMorphBall.cs" t="Include" />
             <e p="AnimPlayer.cs" t="Include" />
             <e p="Brick.cs" t="Include" />
+            <e p="Morphball.cs" t="Include" />
             <e p="Player.cs" t="Include" />
           </e>
           <e p="Engine.cs" t="Include" />

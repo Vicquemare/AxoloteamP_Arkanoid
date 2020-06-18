@@ -1,8 +1,8 @@
 ﻿using System.Drawing;
 using Metronoid.Classes.Game.Graphics.Templates;
-namespace Metronoid.Classes.Game.Graphics.Elements
+namespace Metronoid.Classes.Game.Elements
 {
-    public class AnimPlayer
+    public partial class Player
     {
         private static string _spritesheet = "player";
                 
@@ -17,12 +17,12 @@ namespace Metronoid.Classes.Game.Graphics.Elements
                     get => _idle;
                 }
         
-                public static Templates.Animation AnimIddle
+                public static Animation AnimIddle
                 {
                     get => _animIddle;
                 }
         
-                public Templates.Animation Anim
+                public Animation Anim
                 {
                     get => Anim;
                     set => Anim = value;

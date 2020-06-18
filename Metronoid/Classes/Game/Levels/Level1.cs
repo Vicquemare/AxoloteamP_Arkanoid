@@ -12,6 +12,7 @@ namespace Metronoid.Classes.Game.Levels
             BrickHeight = (int) (clientSize.Height * 0.3) / YAxis;
             BrickWidth = clientSize.Width / XAxis;
             animBricks = new AnimBrick();
+            animBackgrounds = new AnimBackground();
         }
     }
 }

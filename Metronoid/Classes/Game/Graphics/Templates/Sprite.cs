@@ -37,7 +37,7 @@ namespace Metronoid.Classes.Game.Graphics.Templates
 
             switch (spritesheet)
             {
-                case "morphoball":
+                case "morphball":
                     _tileSize = 20;
                     break;
                 case "megaman":
@@ -62,8 +62,8 @@ namespace Metronoid.Classes.Game.Graphics.Templates
                     break;
                 case "background":
                     _notSquare = true;
-                    _tileSizeX = 1632;
-                    _tileSizeY = 960;
+                    _tileSizeX = 816;
+                    _tileSizeY = 480;
                     break;
             }
 

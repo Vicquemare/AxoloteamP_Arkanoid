@@ -44,6 +44,7 @@ namespace Metronoid
             this.Load += new System.EventHandler(this.MainGame_Load);
             this.Shown += new System.EventHandler(this.MainGame_Shown);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.MainGame_Paint);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainGame_MouseMove);
             this.ResumeLayout(false);
         }
 

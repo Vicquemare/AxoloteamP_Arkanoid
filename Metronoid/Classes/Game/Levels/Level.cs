@@ -9,5 +9,6 @@ namespace Metronoid.Classes.Game.Levels
         public int BrickHeight;
         public int BrickWidth;
         public AnimBrick animBricks;
+        public AnimBackground animBackgrounds;
     }
 }
