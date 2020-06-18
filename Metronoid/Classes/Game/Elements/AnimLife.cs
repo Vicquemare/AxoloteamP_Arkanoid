@@ -11,10 +11,10 @@ namespace Metronoid.Classes.Game.Elements
             Sprite.getSprite(0, 0, _spritesheet), Sprite.getSprite(1, 0, _spritesheet), Sprite.getSprite(2, 0, _spritesheet), 
             Sprite.getSprite(0, 1, _spritesheet), Sprite.getSprite(1, 1, _spritesheet), Sprite.getSprite(2, 1, _spritesheet)
         };
-        private static Metronoid.Classes.Game.Graphics.Templates.Animation _animIddle = new Metronoid.Classes.Game.Graphics.Templates.Animation(_idle, 20);
+        private static Metronoid.Classes.Game.Graphics.Templates.Animation _animIddle = new Metronoid.Classes.Game.Graphics.Templates.Animation(_idle, 5);
         
         private static Bitmap[] _idle1 = {
-            Sprite.getSprite(0, 3, _spritesheet)
+            Sprite.getSprite(0, 2, _spritesheet)
         };
         private static Metronoid.Classes.Game.Graphics.Templates.Animation _animIddle1 = new Metronoid.Classes.Game.Graphics.Templates.Animation(_idle1, 20);
         

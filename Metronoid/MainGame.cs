@@ -20,6 +20,8 @@ namespace Metronoid
         private Brick[,] _bricks;
         private Player _player = null;
         private MorphBall _ball = null;
+        private int _maxLife = 3;
+        private Life[] _life = null;
         private readonly Random _random = new Random();
 
         private void MainGame_Load(object sender, EventArgs e)
@@ -36,31 +38,46 @@ namespace Metronoid
             int x = _player.Hitbox.X + (_player.Hitbox.Width / 2) - (ballWidth / 2);
             int y = _player.Hitbox.Y - ballHeight;
             _ball = new MorphBall(new Rectangle(x, y, ballWidth, ballHeight));
+            
+            _life = new Life[_maxLife];
+            int lifeWidth = _lvlInfo.AnimBackgrounds.UiHitbox.Height/2;
+            int xLife = (int) (_lvlInfo.AnimBackgrounds.UiHitbox.X + _lvlInfo.AnimBackgrounds.UiHitbox.Width * 0.25);
+            int yLife = (int) (_lvlInfo.AnimBackgrounds.UiHitbox.Y + _lvlInfo.AnimBackgrounds.UiHitbox.Height/2 - lifeWidth/2);
+            
+            for (int i = 0; i < _maxLife; i++)
+            {
+                _life[i] = new Life(new Rectangle(i* lifeWidth + xLife, yLife, lifeWidth, lifeWidth) );
+            }
+            
             LoadBricks();
             _engine = new Engine(this);
             
             _engine.Load(_lvlInfo);
             _engine.Start();
-            _lvlInfo.animBackgrounds.anim.Start();
+            _lvlInfo.AnimBackgrounds.anim.Start();
             _ball.anim.Start();
             _player.anim.Start();
             for (int i = 0; i < 3; i++)
             {
-                _lvlInfo.animBricks.animArr[i].Start();
+                _lvlInfo.AnimBricks.animArr[i].Start();
             }
+            _lvlInfo.UiElements.Portrait.anim.Start();
+            _lvlInfo.UiElements.Life.anim.Start();
             
         }
 
         public void UpdateStage()
         {
             Invalidate();
-            _lvlInfo.animBackgrounds.anim.Update();
+            _lvlInfo.AnimBackgrounds.anim.Update();
             _ball.anim.Update();
             _player.anim.Update();
             for (int i = 0; i < 3; i++)
             {
-                _lvlInfo.animBricks.animArr[i].Update();
+                _lvlInfo.AnimBricks.animArr[i].Update();
             }
+            _lvlInfo.UiElements.Portrait.anim.Update();
+            _lvlInfo.UiElements.Life.anim.Update();
         }
 
         private void MainGame_Paint(object sender, PaintEventArgs e)
@@ -72,15 +89,23 @@ namespace Metronoid
                 {
                     if (_bricks[i ,j].Active)
                     {
-                        e.Graphics.DrawImage(_lvlInfo.animBricks.animArr[(_bricks[i, j].Type-1)].GetSprite(), _bricks[i ,j].Hitbox);
+                        e.Graphics.DrawImage(_lvlInfo.AnimBricks.animArr[(_bricks[i, j].Type-1)].GetSprite(), _bricks[i ,j].Hitbox);
                     }
                 }
             }
-            e.Graphics.DrawImage(_lvlInfo.animBackgrounds.anim.GetSprite(), new Rectangle(0,(int) (Height*0.3),Width, (int) (Height*0.7)));
+            e.Graphics.DrawImage(_lvlInfo.AnimBackgrounds.anim.GetSprite(), new Rectangle(0,(int) (Height*0.3),Width, (int) (Height*0.7)));
             e.Graphics.DrawImage(_player.anim.GetSprite(), _player.Hitbox);
             e.Graphics.DrawImage(_ball.anim.GetSprite(), _ball.Hitbox);
             //e.Graphics.DrawRectangle(Pens.Black, _ball.Hitbox);
-            e.Graphics.DrawImage(_lvlInfo.animBackgrounds.animUI.GetSprite(), _lvlInfo.animBackgrounds.UiHitbox);
+            e.Graphics.DrawImage(_lvlInfo.AnimBackgrounds.animUI.GetSprite(), _lvlInfo.AnimBackgrounds.UiHitbox);
+            e.Graphics.DrawRectangle(Pens.Chartreuse, _lvlInfo.AnimBackgrounds.UiHitbox);
+            e.Graphics.DrawImage(_lvlInfo.UiElements.Portrait.anim.GetSprite(), _lvlInfo.UiElements.Portrait.Hitbox);
+            for (int i = 0; i < _maxLife; i++)
+            {
+                e.Graphics.DrawImage(_lvlInfo.UiElements.Life.anim.GetSprite(), _life[i].Hitbox);
+                //e.Graphics.DrawRectangle(Pens.Cyan,_life[i].Hitbox);
+                
+            }
         }
 
         private void LoadBricks()

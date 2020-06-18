@@ -20,10 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7d9d210-860d-4c97-a73d-4bc09826f753" name="Default Changelist" comment="kek">
+      <change afterPath="$PROJECT_DIR$/Classes/Game/Elements/Life.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/Game/Elements/Portrait.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Metronoid/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Metronoid/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Metronoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Metronoid/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Metronoid/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Metronoid/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Game/Elements/AnimLife.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Game/Elements/AnimLife.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/Game/Elements/AnimPortrait.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Game/Elements/AnimPortrait.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Game/Graphics/Templates/Sprite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Game/Graphics/Templates/Sprite.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Game/Levels/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Game/Levels/Level.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Game/Levels/Level1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Game/Levels/Level1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Metronoid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Metronoid.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/Metronoid.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Metronoid.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/Metronoid.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Metronoid.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,27 +47,35 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/MainGame.resx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Engine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimBackground.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimBrick.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimPlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/Brick.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/Player.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Form1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimPortrait.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimLife.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MainGame.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/Morphball.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimMorphBall.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Graphics/Animations/Megaman.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Levels/Level.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Levels/Level1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Graphics/Templates/Sprite.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Classes/Game/Graphics/Templates/Animation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9AECFB6F-6EE1-4BB3-9CEC-F864D8D0E1D7/d3/d28296ef/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimLife.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimPortrait.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimBrick.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimMorphBall.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MainGame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Form1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Sprite.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Engine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Sprite.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MainGame.resx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/Brick.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Levels/Level1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Levels/Level.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BD1B6EA4-F54D-4146-A29C-2A12CD6EC436/57/66cd02d4/RuntimeMethodInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A84B63C7-42D5-480B-9047-8BE2A17C9AC4/9d/fcaf90ac/Pens.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/Morphball.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MainGame.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Graphics/Animations/Megaman.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/Portrait.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Graphics/Templates/Sprite.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/Life.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9AECFB6F-6EE1-4BB3-9CEC-F864D8D0E1D7/a1/cc6aee19/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimBackground.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -66,7 +87,6 @@
         <option value="$PROJECT_DIR$/Classes/Game/Graphics/Elements/Brick.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/Graphics/Elements/Player.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/Engine.cs" />
-        <option value="$PROJECT_DIR$/Classes/Game/Levels/Level.cs" />
         <option value="$PROJECT_DIR$/Form1.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/Graphics/Animations/Megaman.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/Elements/AnimationMorphoBall.cs" />
@@ -79,11 +99,14 @@
         <option value="$PROJECT_DIR$/Classes/Game/Elements/AnimMorphBall.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/Elements/Player.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/Elements/AnimBackground.cs" />
-        <option value="$PROJECT_DIR$/MainGame.cs" />
-        <option value="$PROJECT_DIR$/Classes/Game/Levels/Level1.cs" />
-        <option value="$PROJECT_DIR$/Classes/Game/Elements/AnimLife.cs" />
-        <option value="$PROJECT_DIR$/Classes/Game/Elements/AnimPortrait.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/Graphics/Templates/Sprite.cs" />
+        <option value="$PROJECT_DIR$/Classes/Game/Levels/Level.cs" />
+        <option value="$PROJECT_DIR$/Classes/Game/Elements/Portrait.cs" />
+        <option value="$PROJECT_DIR$/Classes/Game/Elements/AnimPortrait.cs" />
+        <option value="$PROJECT_DIR$/Classes/Game/Levels/Level1.cs" />
+        <option value="$PROJECT_DIR$/Classes/Game/Elements/Life.cs" />
+        <option value="$PROJECT_DIR$/MainGame.cs" />
+        <option value="$PROJECT_DIR$/Classes/Game/Elements/AnimLife.cs" />
       </list>
     </option>
   </component>
@@ -225,6 +248,11 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -252,86 +280,86 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1589762863312" />
-    <state width="1493" height="198" key="GridCell.Tab.0.bottom" timestamp="1592463839287">
+    <state width="1493" height="198" key="GridCell.Tab.0.bottom" timestamp="1592519944599">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592463839287" />
-    <state width="1493" height="198" key="GridCell.Tab.0.center" timestamp="1592463839287">
+    <state width="1493" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592519944599" />
+    <state width="1493" height="198" key="GridCell.Tab.0.center" timestamp="1592519944598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592463839287" />
-    <state width="1493" height="198" key="GridCell.Tab.0.left" timestamp="1592463839287">
+    <state width="1493" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592519944598" />
+    <state width="1493" height="198" key="GridCell.Tab.0.left" timestamp="1592519944598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592463839287" />
-    <state width="1493" height="198" key="GridCell.Tab.0.right" timestamp="1592463839287">
+    <state width="1493" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592519944598" />
+    <state width="1493" height="198" key="GridCell.Tab.0.right" timestamp="1592519944599">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592463839287" />
-    <state width="1493" height="288" key="GridCell.Tab.1.bottom" timestamp="1592377559252">
+    <state width="1493" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592519944599" />
+    <state width="1493" height="288" key="GridCell.Tab.1.bottom" timestamp="1592519852633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592377559252" />
-    <state width="1493" height="288" key="GridCell.Tab.1.center" timestamp="1592377559252">
+    <state width="1493" height="288" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592519852633" />
+    <state width="1493" height="288" key="GridCell.Tab.1.center" timestamp="1592519852633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1592377559252" />
-    <state width="1493" height="288" key="GridCell.Tab.1.left" timestamp="1592377559252">
+    <state width="1493" height="288" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1592519852633" />
+    <state width="1493" height="288" key="GridCell.Tab.1.left" timestamp="1592519852632">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1592377559252" />
-    <state width="1493" height="288" key="GridCell.Tab.1.right" timestamp="1592377559252">
+    <state width="1493" height="288" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1592519852632" />
+    <state width="1493" height="288" key="GridCell.Tab.1.right" timestamp="1592519852633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1592377559252" />
-    <state width="1493" height="288" key="GridCell.Tab.2.bottom" timestamp="1592377559253">
+    <state width="1493" height="288" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1592519852633" />
+    <state width="1493" height="288" key="GridCell.Tab.2.bottom" timestamp="1592519852636">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592377559253" />
-    <state width="1493" height="288" key="GridCell.Tab.2.center" timestamp="1592377559253">
+    <state width="1493" height="288" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592519852636" />
+    <state width="1493" height="288" key="GridCell.Tab.2.center" timestamp="1592519852633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1592377559253" />
-    <state width="1493" height="288" key="GridCell.Tab.2.left" timestamp="1592377559252">
+    <state width="1493" height="288" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1592519852633" />
+    <state width="1493" height="288" key="GridCell.Tab.2.left" timestamp="1592519852633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1592377559252" />
-    <state width="1493" height="288" key="GridCell.Tab.2.right" timestamp="1592377559253">
+    <state width="1493" height="288" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1592519852633" />
+    <state width="1493" height="288" key="GridCell.Tab.2.right" timestamp="1592519852634">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1592377559253" />
-    <state width="1493" height="288" key="GridCell.Tab.3.bottom" timestamp="1592377559253">
+    <state width="1493" height="288" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1592519852634" />
+    <state width="1493" height="288" key="GridCell.Tab.3.bottom" timestamp="1592519852640">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592377559253" />
-    <state width="1493" height="288" key="GridCell.Tab.3.center" timestamp="1592377559253">
+    <state width="1493" height="288" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592519852640" />
+    <state width="1493" height="288" key="GridCell.Tab.3.center" timestamp="1592519852638">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1592377559253" />
-    <state width="1493" height="288" key="GridCell.Tab.3.left" timestamp="1592377559253">
+    <state width="1493" height="288" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1592519852638" />
+    <state width="1493" height="288" key="GridCell.Tab.3.left" timestamp="1592519852637">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1592377559253" />
-    <state width="1493" height="288" key="GridCell.Tab.3.right" timestamp="1592377559253">
+    <state width="1493" height="288" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1592519852637" />
+    <state width="1493" height="288" key="GridCell.Tab.3.right" timestamp="1592519852640">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1592377559253" />
-    <state width="1493" height="288" key="GridCell.Tab.4.bottom" timestamp="1592377559253">
+    <state width="1493" height="288" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1592519852640" />
+    <state width="1493" height="288" key="GridCell.Tab.4.bottom" timestamp="1592519852641">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592377559253" />
-    <state width="1493" height="288" key="GridCell.Tab.4.center" timestamp="1592377559253">
+    <state width="1493" height="288" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592519852641" />
+    <state width="1493" height="288" key="GridCell.Tab.4.center" timestamp="1592519852641">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1592377559253" />
-    <state width="1493" height="288" key="GridCell.Tab.4.left" timestamp="1592377559253">
+    <state width="1493" height="288" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1592519852641" />
+    <state width="1493" height="288" key="GridCell.Tab.4.left" timestamp="1592519852640">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1592377559253" />
-    <state width="1493" height="288" key="GridCell.Tab.4.right" timestamp="1592377559253">
+    <state width="1493" height="288" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1592519852640" />
+    <state width="1493" height="288" key="GridCell.Tab.4.right" timestamp="1592519852641">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1592377559253" />
+    <state width="1493" height="288" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1592519852641" />
     <state x="479" y="102" key="RiderGenerateDialog" timestamp="1592446651704">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -353,9 +381,9 @@
     </state>
     <state x="321" y="128" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592442624530" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592449509153" />
-    <state x="459" y="200" key="git4idea.merge.GitPullDialog" timestamp="1589780313814">
+    <state x="459" y="200" key="git4idea.merge.GitPullDialog" timestamp="1592516402013">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="459" y="200" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1589780313814" />
+    <state x="459" y="200" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1592516402013" />
   </component>
 </project>

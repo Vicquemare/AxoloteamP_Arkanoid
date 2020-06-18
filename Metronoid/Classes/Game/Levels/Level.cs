@@ -1,4 +1,5 @@
-﻿using Metronoid.Classes.Game.Graphics.Elements;
+﻿using Metronoid.Classes.Game.Elements;
+using Metronoid.Classes.Game.Graphics.Elements;
 
 namespace Metronoid.Classes.Game.Levels
 {
@@ -8,7 +9,14 @@ namespace Metronoid.Classes.Game.Levels
         public int YAxis;
         public int BrickHeight;
         public int BrickWidth;
-        public AnimBrick animBricks;
-        public AnimBackground animBackgrounds;
+        public AnimBrick AnimBricks;
+        public AnimBackground AnimBackgrounds;
+        public UiCollection UiElements;
+        
+        public class UiCollection
+        {
+            public Portrait Portrait;
+            public AnimLife Life;
+        } 
     }
 }

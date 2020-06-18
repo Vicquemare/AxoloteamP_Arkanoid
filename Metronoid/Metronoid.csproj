@@ -52,9 +52,11 @@
         <Compile Include="Classes\Game\Elements\AnimMorphBall.cs" />
         <Compile Include="Classes\Game\Elements\AnimPlayer.cs" />
         <Compile Include="Classes\Game\Elements\AnimPortrait.cs" />
+        <Compile Include="Classes\Game\Elements\Life.cs" />
         <Compile Include="Classes\Game\Elements\Morphball.cs" />
         <Compile Include="Classes\Game\Elements\Brick.cs" />
         <Compile Include="Classes\Game\Elements\Player.cs" />
+        <Compile Include="Classes\Game\Elements\Portrait.cs" />
         <Compile Include="Classes\Game\Engine.cs" />
         <Compile Include="Classes\Game\Graphics\Animations\Megaman.cs" />
         <Compile Include="Classes\Game\Graphics\Templates\Animation.cs" />

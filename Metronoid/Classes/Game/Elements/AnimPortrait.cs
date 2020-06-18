@@ -3,7 +3,7 @@ using Metronoid.Classes.Game.Graphics.Templates;
 
 namespace Metronoid.Classes.Game.Elements
 {
-    public class AnimPortrait
+    public partial class Portrait
     {
         private static string _spritesheet = "portrait";
         
@@ -13,7 +13,7 @@ namespace Metronoid.Classes.Game.Elements
             Sprite.getSprite(0, 2, _spritesheet), Sprite.getSprite(1, 2, _spritesheet), Sprite.getSprite(2, 2, _spritesheet), Sprite.getSprite(3, 2, _spritesheet),
             Sprite.getSprite(0, 3, _spritesheet)
         };
-        private static Metronoid.Classes.Game.Graphics.Templates.Animation _animIddle = new Metronoid.Classes.Game.Graphics.Templates.Animation(_idle, 20);
+        private static Metronoid.Classes.Game.Graphics.Templates.Animation _animIddle = new Metronoid.Classes.Game.Graphics.Templates.Animation(_idle, 1);
         public Metronoid.Classes.Game.Graphics.Templates.Animation anim = _animIddle;
 
         public static Bitmap[] Idle
