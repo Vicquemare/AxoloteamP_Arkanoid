@@ -8,3 +8,13 @@ C:\Users\paper\Documents\Progra\Metronoid\Metronoid\obj\Debug\Metronoid.exe
 C:\Users\paper\Documents\Progra\Metronoid\Metronoid\obj\Debug\Metronoid.pdb
 C:\Users\paper\Documents\Progra\Metronoid\Metronoid\obj\Debug\Metronoid.Form1.resources
 C:\Users\paper\Documents\Progra\Metronoid\Metronoid\obj\Debug\Metronoid.MainGame.resources
+C:\Users\perry_000\Desktop\Arkanoid\Metronoid\bin\Debug\Metronoid.exe.config
+C:\Users\perry_000\Desktop\Arkanoid\Metronoid\bin\Debug\Metronoid.exe
+C:\Users\perry_000\Desktop\Arkanoid\Metronoid\bin\Debug\Metronoid.pdb
+C:\Users\perry_000\Desktop\Arkanoid\Metronoid\obj\Debug\Metronoid.csprojAssemblyReference.cache
+C:\Users\perry_000\Desktop\Arkanoid\Metronoid\obj\Debug\Metronoid.Form1.resources
+C:\Users\perry_000\Desktop\Arkanoid\Metronoid\obj\Debug\Metronoid.MainGame.resources
+C:\Users\perry_000\Desktop\Arkanoid\Metronoid\obj\Debug\Metronoid.Properties.Resources.resources
+C:\Users\perry_000\Desktop\Arkanoid\Metronoid\obj\Debug\Metronoid.csproj.GenerateResource.cache
+C:\Users\perry_000\Desktop\Arkanoid\Metronoid\obj\Debug\Metronoid.exe
+C:\Users\perry_000\Desktop\Arkanoid\Metronoid\obj\Debug\Metronoid.pdb
