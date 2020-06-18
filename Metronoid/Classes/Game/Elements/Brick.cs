@@ -13,6 +13,7 @@ namespace Metronoid.Classes.Game.Graphics.Elements
             Hitbox = hitbox;
             Type = type;
             Active = true;
+            
         }
     }
 }

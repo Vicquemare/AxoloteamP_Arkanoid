@@ -1,4 +1,6 @@
-﻿namespace Metronoid.Classes.Game.Levels
+﻿using Metronoid.Classes.Game.Graphics.Elements;
+
+namespace Metronoid.Classes.Game.Levels
 {
     public abstract class Level
     {
@@ -6,5 +8,6 @@
         public int YAxis;
         public int BrickHeight;
         public int BrickWidth;
+        public AnimBrick animBricks;
     }
 }

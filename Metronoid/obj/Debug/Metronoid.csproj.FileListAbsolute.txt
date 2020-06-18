@@ -7,3 +7,4 @@ C:\Users\paper\Documents\Progra\Metronoid\Metronoid\obj\Debug\Metronoid.csproj.G
 C:\Users\paper\Documents\Progra\Metronoid\Metronoid\obj\Debug\Metronoid.exe
 C:\Users\paper\Documents\Progra\Metronoid\Metronoid\obj\Debug\Metronoid.pdb
 C:\Users\paper\Documents\Progra\Metronoid\Metronoid\obj\Debug\Metronoid.Form1.resources
+C:\Users\paper\Documents\Progra\Metronoid\Metronoid\obj\Debug\Metronoid.MainGame.resources

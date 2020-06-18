@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using Metronoid.Classes.Game.Graphics.Elements;
 
 namespace Metronoid.Classes.Game.Levels
 {
@@ -8,8 +9,9 @@ namespace Metronoid.Classes.Game.Levels
         {
             XAxis = 10; 
             YAxis = 5;
-            BrickHeight = (int) (clientSize.Height * 0.4) / YAxis;
+            BrickHeight = (int) (clientSize.Height * 0.3) / YAxis;
             BrickWidth = clientSize.Width / XAxis;
+            animBricks = new AnimBrick();
         }
     }
 }
