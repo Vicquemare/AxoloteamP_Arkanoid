@@ -15,6 +15,7 @@
             <e p="AnimLife.cs" t="Include" />
             <e p="AnimMorphBall.cs" t="Include" />
             <e p="AnimPlayer.cs" t="Include" />
+            <e p="AnimPortrait.cs" t="Include" />
             <e p="Brick.cs" t="Include" />
             <e p="Morphball.cs" t="Include" />
             <e p="Player.cs" t="Include" />

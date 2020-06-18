@@ -81,9 +81,10 @@ namespace Metronoid.Classes.Game.Graphics.Templates
                     _tileSizeY = 15;
                     break;
                 case "portrait":
-                    _notSquare = true;
-                    _tileSizeX = 92;
-                    _tileSizeY = 92;
+                    _tileSize = 92;
+                    break;
+                case "life":
+                    _tileSize = 126;
                     break;
                 case "UI":
                     _notSquare = true;
