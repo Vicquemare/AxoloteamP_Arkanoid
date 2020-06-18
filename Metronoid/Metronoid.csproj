@@ -46,6 +46,7 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Classes\Game\Elements\AnimBackground.cs" />
         <Compile Include="Classes\Game\Elements\AnimBrick.cs" />
         <Compile Include="Classes\Game\Elements\AnimMorphoBall.cs" />
         <Compile Include="Classes\Game\Elements\AnimPlayer.cs" />

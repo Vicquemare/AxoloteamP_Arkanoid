@@ -60,6 +60,11 @@ namespace Metronoid.Classes.Game.Graphics.Templates
                     _tileSizeX = 47;
                     _tileSizeY = 13;
                     break;
+                case "background":
+                    _notSquare = true;
+                    _tileSizeX = 1632;
+                    _tileSizeY = 960;
+                    break;
             }
 
 
