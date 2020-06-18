@@ -50,6 +50,7 @@
         <Compile Include="Classes\Game\Elements\AnimBrick.cs" />
         <Compile Include="Classes\Game\Elements\AnimMorphBall.cs" />
         <Compile Include="Classes\Game\Elements\AnimPlayer.cs" />
+        <Compile Include="Classes\Game\Elements\AnimPortrait.cs" />
         <Compile Include="Classes\Game\Elements\Morphball.cs" />
         <Compile Include="Classes\Game\Elements\Brick.cs" />
         <Compile Include="Classes\Game\Elements\Player.cs" />
