@@ -48,6 +48,7 @@
     <ItemGroup>
         <Compile Include="Classes\Game\Elements\AnimBackground.cs" />
         <Compile Include="Classes\Game\Elements\AnimBrick.cs" />
+        <Compile Include="Classes\Game\Elements\AnimLife.cs" />
         <Compile Include="Classes\Game\Elements\AnimMorphBall.cs" />
         <Compile Include="Classes\Game\Elements\AnimPlayer.cs" />
         <Compile Include="Classes\Game\Elements\AnimPortrait.cs" />
