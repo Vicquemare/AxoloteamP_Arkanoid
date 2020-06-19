@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using Metronoid.Classes.Game;
 using Metronoid.Classes.Game.Elements;
@@ -15,12 +16,8 @@ namespace Metronoid
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
         }
+        private Bitmap score = null;
         
-
-        private void MainGame_Load(object sender, EventArgs e)
-        {
-            
-        }
 
         private void MainGame_Shown(object sender, EventArgs e)
         {
@@ -41,6 +38,10 @@ namespace Metronoid
             {
                 GameState._life[i] = new Life(new Rectangle(i* lifeWidth + xLife, yLife, lifeWidth, lifeWidth) );
             }
+            //HitboxDelScore
+            GameState._lvlInfo.UiElements.ScoreHitbox = new Rectangle((GameState._maxLife * lifeWidth + xLife), yLife , (int) (GameState._lvlInfo.AnimBackgrounds.UiHitbox.Width * 0.5),lifeWidth);
+            // HitboxDelTextoDeVidas
+            GameState._lvlInfo.UiElements.LifeTextHitbox = new Rectangle((GameState._lvlInfo.UiElements.Portrait.Hitbox.X + GameState._lvlInfo.UiElements.Portrait.Hitbox.Width), yLife , lifeWidth * GameState._maxLife,lifeWidth);
             
             LoadBricks();
             GameState._engine = new Engine(this);
@@ -91,8 +92,8 @@ namespace Metronoid
             e.Graphics.DrawImage(GameState._lvlInfo.AnimBackgrounds.anim.GetSprite(), new Rectangle(0,(int) (Height*0.3),Width, (int) (Height*0.7)));
             e.Graphics.DrawImage(GameState._player.anim.GetSprite(), GameState._player.Hitbox);
             e.Graphics.DrawImage(GameState._ball.anim.GetSprite(), GameState._ball.Hitbox);
-            e.Graphics.DrawRectangle(Pens.Black, GameState._player.Hitbox);
-            e.Graphics.DrawRectangle(Pens.Black, GameState._ball.Hitbox);
+            //e.Graphics.DrawRectangle(Pens.Black, GameState._player.Hitbox);
+            //e.Graphics.DrawRectangle(Pens.Black, GameState._ball.Hitbox);
             e.Graphics.DrawImage(GameState._lvlInfo.AnimBackgrounds.animUI.GetSprite(), GameState._lvlInfo.AnimBackgrounds.UiHitbox);
             //e.Graphics.DrawRectangle(Pens.Chartreuse, GameState._lvlInfo.AnimBackgrounds.UiHitbox);
             e.Graphics.DrawImage(GameState._lvlInfo.UiElements.Portrait.anim.GetSprite(), GameState._lvlInfo.UiElements.Portrait.Hitbox);
@@ -103,12 +104,31 @@ namespace Metronoid
                 
             }
             
-            Rectangle rectangle3 = Rectangle.Intersect(GameState._player.Hitbox, GameState._ball.Hitbox);
+            /*Rectangle rectangle3 = Rectangle.Intersect(GameState._player.Hitbox, GameState._ball.Hitbox);
             if (!rectangle3.IsEmpty)
             {
                 e.Graphics.FillRectangle(Brushes.Green, rectangle3);
-            }
+            }*/
+            
+            e.Graphics.DrawString("score: 19062020", GameState._lvlInfo.DrawFont, Brushes.White, GameState._lvlInfo.UiElements.ScoreHitbox, GameState._lvlInfo.DrawFormat);
+            e.Graphics.DrawString("lives: ", GameState._lvlInfo.DrawFont, Brushes.White, GameState._lvlInfo.UiElements.LifeTextHitbox, GameState._lvlInfo.DrawFormat);
+
         }
+        
+        /* private void updateScore(string texto)
+        {
+            Bitmap bmp = new Bitmap(800,800);
+            RectangleF rectf = new RectangleF(70, 90, 300, 300);
+            Graphics g = Graphics.FromImage(bmp);
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+            g.InterpolationMode = InterpolationMode.HighQualityBicubic;
+            g.PixelOffsetMode = PixelOffsetMode.HighQuality;
+            g.DrawString(texto, new Font("Metroid Fusion",24), Brushes.White, rectf);
+
+            g.Flush();
+
+            score = bmp;
+        }*/
 
         private void LoadBricks()
         {
@@ -127,6 +147,12 @@ namespace Metronoid
                 }
             }
         }
+        
+        private void MainGame_Load(object sender, EventArgs e)
+            {
+               // string texto = "score: 18062020";
+               // updateScore(texto);
+            }
 
         private void MainGame_MouseMove(object sender, MouseEventArgs e)
         {

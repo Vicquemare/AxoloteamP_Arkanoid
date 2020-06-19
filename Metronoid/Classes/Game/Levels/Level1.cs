@@ -15,7 +15,11 @@ namespace Metronoid.Classes.Game.Levels
             AnimBricks = new AnimBrick();
             AnimBackgrounds = new AnimBackground();
             AnimBackgrounds.UiHitbox = new Rectangle(0, (int) (clientSize.Height * 0.85), clientSize.Width, (int) (clientSize.Height*0.15));
-            UiElements = new UiCollection {Life = new AnimLife(), Portrait = new Portrait(new Rectangle((int) (AnimBackgrounds.UiHitbox.X + (AnimBackgrounds.UiHitbox.Width * 0.05)), (int) (AnimBackgrounds.UiHitbox.Y + (AnimBackgrounds.UiHitbox.Height * 0.15)), (int) (AnimBackgrounds.UiHitbox.Height - ((AnimBackgrounds.UiHitbox.Height * 0.15)*2)), (int) (AnimBackgrounds.UiHitbox.Height - ((AnimBackgrounds.UiHitbox.Height * 0.15)*2)) ))};
+            UiElements = new UiCollection {Life = new AnimLife(), Portrait = new Portrait(new Rectangle((int) (AnimBackgrounds.UiHitbox.X + (AnimBackgrounds.UiHitbox.Width * 0.05)), (int) (AnimBackgrounds.UiHitbox.Y + (AnimBackgrounds.UiHitbox.Height * 0.15)), (int) (AnimBackgrounds.UiHitbox.Height - ((AnimBackgrounds.UiHitbox.Height * 0.15)*2)), (int) (AnimBackgrounds.UiHitbox.Height - ((AnimBackgrounds.UiHitbox.Height * 0.15)*2)) )), ScoreHitbox = new Rectangle(), LifeTextHitbox = new Rectangle()};
+            DrawFormat = new StringFormat();
+            DrawFormat.Alignment = StringAlignment.Center;
+            DrawFormat.LineAlignment = StringAlignment.Center;
+            DrawFont = new Font("Metroid Fusion", 24);
         }
     }
 }

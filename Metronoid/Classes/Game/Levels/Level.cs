@@ -1,4 +1,5 @@
-﻿using Metronoid.Classes.Game.Elements;
+﻿using System.Drawing;
+using Metronoid.Classes.Game.Elements;
 using Metronoid.Classes.Game.Graphics.Elements;
 
 namespace Metronoid.Classes.Game.Levels
@@ -12,11 +13,15 @@ namespace Metronoid.Classes.Game.Levels
         public AnimBrick AnimBricks;
         public AnimBackground AnimBackgrounds;
         public UiCollection UiElements;
+        public StringFormat DrawFormat;
+        public Font DrawFont;
         
         public class UiCollection
         {
             public Portrait Portrait;
             public AnimLife Life;
+            public Rectangle ScoreHitbox = new Rectangle(); 
+            public Rectangle LifeTextHitbox = new Rectangle(); 
         } 
     }
 }
