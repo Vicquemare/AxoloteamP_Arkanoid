@@ -186,7 +186,27 @@ namespace Metronoid
                                 }
 
                                 //GameState._ball.XSpeed *= -1;
-                                GameState._ball.YSpeed *= -1;
+                                //GameState._ball.YSpeed *= -1;
+
+                                bool[] collision = Collisions(GameState._bricks[i, j].Hitbox); //arriba, abajo, derecha, izquierda
+                                if (collision[0])
+                                {
+                                    GameState._ball.YSpeed *= -1;
+                                }
+                                if (collision[1])
+                                {
+                                    GameState._ball.YSpeed = Math.Abs(GameState._ball.YSpeed) * -1;
+                                }
+                                if (collision[2])
+                                {
+                                    GameState._ball.XSpeed *= -1;
+                                }
+
+                                if (collision[3])
+                                {
+                                    GameState._ball.XSpeed *= -1;
+                                }
+                                
                                 return;
                             }
                         }
@@ -200,7 +220,9 @@ namespace Metronoid
                     if (GameState._ball.Hitbox.IntersectsWith(GameState._player.Hitbox))
                     {
                         GameState._ball.YSpeed *= -1;
-                        //GameState._ball.Hitbox.Y = GameState._player.Hitbox.Y-GameState._ball.Hitbox.Height;
+                        GameState._ball.Hitbox.Y = GameState._player.Hitbox.Y-GameState._ball.Hitbox.Height;
+                        
+                        
                         return;
                     }
                 }
@@ -221,6 +243,27 @@ namespace Metronoid
         {
             GameState.Status = 1;
             GameState._ball.State = 1;
+        }
+        
+        public bool[] Collisions(Rectangle rect)
+        {
+            var intersection = Rectangle.Intersect(GameState._ball.Hitbox, rect);
+            if(intersection.IsEmpty){
+                return new []{ false, false, false, false };
+            }
+
+            bool hitSomethingAbove = GameState._ball.Hitbox.Top == intersection.Top;
+            bool hitSomethingBelow = GameState._ball.Hitbox.Bottom == intersection.Bottom;
+            bool hitSomethingOnTheRight = GameState._ball.Hitbox.Right == intersection.Right;
+            bool hitSomethingOnTheLeft = GameState._ball.Hitbox.Left == intersection.Left;
+
+            return new bool[] 
+            { 
+                hitSomethingAbove, 
+                hitSomethingBelow, 
+                hitSomethingOnTheRight, 
+                hitSomethingOnTheLeft, 
+            };
         }
     }
 }
