@@ -23,6 +23,7 @@
             <e p="Portrait.cs" t="Include" />
           </e>
           <e p="Engine.cs" t="Include" />
+          <e p="GameState.cs" t="Include" />
           <e p="Graphics" t="Include">
             <e p="Animations" t="Include">
               <e p="Megaman.cs" t="Include" />

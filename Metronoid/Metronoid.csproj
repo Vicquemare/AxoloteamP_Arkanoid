@@ -58,6 +58,7 @@
         <Compile Include="Classes\Game\Elements\Player.cs" />
         <Compile Include="Classes\Game\Elements\Portrait.cs" />
         <Compile Include="Classes\Game\Engine.cs" />
+        <Compile Include="Classes\Game\GameState.cs" />
         <Compile Include="Classes\Game\Graphics\Animations\Megaman.cs" />
         <Compile Include="Classes\Game\Graphics\Templates\Animation.cs" />
         <Compile Include="Classes\Game\Graphics\Templates\Frame.cs" />

@@ -15,14 +15,7 @@ namespace Metronoid
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
         }
-        private Engine _engine = null;
-        private Level _lvlInfo = null;
-        private Brick[,] _bricks;
-        private Player _player = null;
-        private MorphBall _ball = null;
-        private int _maxLife = 3;
-        private Life[] _life = null;
-        private readonly Random _random = new Random();
+        
 
         private void MainGame_Load(object sender, EventArgs e)
         {
@@ -31,93 +24,102 @@ namespace Metronoid
 
         private void MainGame_Shown(object sender, EventArgs e)
         {
-            _lvlInfo = new Level1(ClientSize);
-            _player = new Player(ClientSize);
+            GameState._lvlInfo = new Level1(ClientSize);
+            GameState._player = new Player(ClientSize);
             int ballWidth = (int) (Width * 0.05);
             int ballHeight = (int) (Width * 0.05);
-            int x = _player.Hitbox.X + (_player.Hitbox.Width / 2) - (ballWidth / 2);
-            int y = _player.Hitbox.Y - ballHeight;
-            _ball = new MorphBall(new Rectangle(x, y, ballWidth, ballHeight));
+            int x = GameState._player.Hitbox.X + (GameState._player.Hitbox.Width / 2) - (ballWidth / 2);
+            int y = GameState._player.Hitbox.Y - ballHeight;
+            GameState._ball = new MorphBall(new Rectangle(x, y, ballWidth, ballHeight));
             
-            _life = new Life[_maxLife];
-            int lifeWidth = _lvlInfo.AnimBackgrounds.UiHitbox.Height/2;
-            int xLife = (int) (_lvlInfo.AnimBackgrounds.UiHitbox.X + _lvlInfo.AnimBackgrounds.UiHitbox.Width * 0.25);
-            int yLife = (int) (_lvlInfo.AnimBackgrounds.UiHitbox.Y + _lvlInfo.AnimBackgrounds.UiHitbox.Height/2 - lifeWidth/2);
+            GameState._life = new Life[GameState._maxLife];
+            int lifeWidth = GameState._lvlInfo.AnimBackgrounds.UiHitbox.Height/2;
+            int xLife = (int) (GameState._lvlInfo.AnimBackgrounds.UiHitbox.X + GameState._lvlInfo.AnimBackgrounds.UiHitbox.Width * 0.25);
+            int yLife = (int) (GameState._lvlInfo.AnimBackgrounds.UiHitbox.Y + GameState._lvlInfo.AnimBackgrounds.UiHitbox.Height/2 - lifeWidth/2);
             
-            for (int i = 0; i < _maxLife; i++)
+            for (int i = 0; i < GameState._maxLife; i++)
             {
-                _life[i] = new Life(new Rectangle(i* lifeWidth + xLife, yLife, lifeWidth, lifeWidth) );
+                GameState._life[i] = new Life(new Rectangle(i* lifeWidth + xLife, yLife, lifeWidth, lifeWidth) );
             }
             
             LoadBricks();
-            _engine = new Engine(this);
+            GameState._engine = new Engine(this);
             
-            _engine.Load(_lvlInfo);
-            _engine.Start();
-            _lvlInfo.AnimBackgrounds.anim.Start();
-            _ball.anim.Start();
-            _player.anim.Start();
+            GameState._engine.Load(GameState._lvlInfo);
+            GameState._engine.Start();
+            GameState._lvlInfo.AnimBackgrounds.anim.Start();
+            GameState._ball.anim.Start();
+            GameState._player.anim.Start();
             for (int i = 0; i < 3; i++)
             {
-                _lvlInfo.AnimBricks.animArr[i].Start();
+                GameState._lvlInfo.AnimBricks.animArr[i].Start();
             }
-            _lvlInfo.UiElements.Portrait.anim.Start();
-            _lvlInfo.UiElements.Life.anim.Start();
+            GameState._lvlInfo.UiElements.Portrait.anim.Start();
+            GameState._lvlInfo.UiElements.Life.anim.Start();
             
         }
 
         public void UpdateStage()
         {
             Invalidate();
-            _lvlInfo.AnimBackgrounds.anim.Update();
-            _ball.anim.Update();
-            _player.anim.Update();
+            GameState._lvlInfo.AnimBackgrounds.anim.Update();
+            GameState._ball.anim.Update();
+            GameState._player.anim.Update();
             for (int i = 0; i < 3; i++)
             {
-                _lvlInfo.AnimBricks.animArr[i].Update();
+                GameState._lvlInfo.AnimBricks.animArr[i].Update();
             }
-            _lvlInfo.UiElements.Portrait.anim.Update();
-            _lvlInfo.UiElements.Life.anim.Update();
+            GameState._lvlInfo.UiElements.Portrait.anim.Update();
+            GameState._lvlInfo.UiElements.Life.anim.Update();
+
+            BounceBall();
         }
 
         private void MainGame_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.FillRectangle(Brushes.Black, new Rectangle(0,0,Width, (int) (Height*0.3)));
-            for (int i = 0; i < _lvlInfo.YAxis; i++)
+            for (int i = 0; i < GameState._lvlInfo.YAxis; i++)
             {
-                for (int j = 0; j < _lvlInfo.XAxis; j++)
+                for (int j = 0; j < GameState._lvlInfo.XAxis; j++)
                 {
-                    if (_bricks[i ,j].Active)
+                    if (GameState._bricks[i ,j].Active)
                     {
-                        e.Graphics.DrawImage(_lvlInfo.AnimBricks.animArr[(_bricks[i, j].Type-1)].GetSprite(), _bricks[i ,j].Hitbox);
+                        e.Graphics.DrawImage(GameState._lvlInfo.AnimBricks.animArr[(GameState._bricks[i, j].Type-1)].GetSprite(), GameState._bricks[i ,j].Hitbox);
                     }
                 }
             }
-            e.Graphics.DrawImage(_lvlInfo.AnimBackgrounds.anim.GetSprite(), new Rectangle(0,(int) (Height*0.3),Width, (int) (Height*0.7)));
-            e.Graphics.DrawImage(_player.anim.GetSprite(), _player.Hitbox);
-            e.Graphics.DrawImage(_ball.anim.GetSprite(), _ball.Hitbox);
-            //e.Graphics.DrawRectangle(Pens.Black, _ball.Hitbox);
-            e.Graphics.DrawImage(_lvlInfo.AnimBackgrounds.animUI.GetSprite(), _lvlInfo.AnimBackgrounds.UiHitbox);
-            e.Graphics.DrawRectangle(Pens.Chartreuse, _lvlInfo.AnimBackgrounds.UiHitbox);
-            e.Graphics.DrawImage(_lvlInfo.UiElements.Portrait.anim.GetSprite(), _lvlInfo.UiElements.Portrait.Hitbox);
-            for (int i = 0; i < _maxLife; i++)
+            e.Graphics.DrawImage(GameState._lvlInfo.AnimBackgrounds.anim.GetSprite(), new Rectangle(0,(int) (Height*0.3),Width, (int) (Height*0.7)));
+            e.Graphics.DrawImage(GameState._player.anim.GetSprite(), GameState._player.Hitbox);
+            e.Graphics.DrawImage(GameState._ball.anim.GetSprite(), GameState._ball.Hitbox);
+            e.Graphics.DrawRectangle(Pens.Black, GameState._player.Hitbox);
+            e.Graphics.DrawRectangle(Pens.Black, GameState._ball.Hitbox);
+            e.Graphics.DrawImage(GameState._lvlInfo.AnimBackgrounds.animUI.GetSprite(), GameState._lvlInfo.AnimBackgrounds.UiHitbox);
+            //e.Graphics.DrawRectangle(Pens.Chartreuse, GameState._lvlInfo.AnimBackgrounds.UiHitbox);
+            e.Graphics.DrawImage(GameState._lvlInfo.UiElements.Portrait.anim.GetSprite(), GameState._lvlInfo.UiElements.Portrait.Hitbox);
+            for (int i = 0; i < GameState._maxLife; i++)
             {
-                e.Graphics.DrawImage(_lvlInfo.UiElements.Life.anim.GetSprite(), _life[i].Hitbox);
+                e.Graphics.DrawImage(GameState._lvlInfo.UiElements.Life.anim.GetSprite(), GameState._life[i].Hitbox);
                 //e.Graphics.DrawRectangle(Pens.Cyan,_life[i].Hitbox);
                 
+            }
+            
+            Rectangle rectangle3 = Rectangle.Intersect(GameState._player.Hitbox, GameState._ball.Hitbox);
+            if (!rectangle3.IsEmpty)
+            {
+                e.Graphics.FillRectangle(Brushes.Green, rectangle3);
             }
         }
 
         private void LoadBricks()
         {
-            _bricks = new Brick[_lvlInfo.YAxis, _lvlInfo.XAxis];
-            for (int i = 0; i < _lvlInfo.YAxis; i++)
+            GameState._bricks = new Brick[GameState._lvlInfo.YAxis, GameState._lvlInfo.XAxis];
+            for (int i = 0; i < GameState._lvlInfo.YAxis; i++)
             {
-                for (int j = 0; j < _lvlInfo.XAxis; j++)
+                for (int j = 0; j < GameState._lvlInfo.XAxis; j++)
                 {
-                    Rectangle aux = new Rectangle(j * _lvlInfo.BrickWidth, i * _lvlInfo.BrickHeight, _lvlInfo.BrickWidth, _lvlInfo.BrickHeight);
-                    int type = _random.Next(1, 4);
-                    _bricks[i ,j] = new Brick(aux, type);
+                    Rectangle aux = new Rectangle(j * GameState._lvlInfo.BrickWidth, i * GameState._lvlInfo.BrickHeight, GameState._lvlInfo.BrickWidth, GameState._lvlInfo.BrickHeight);
+                    int type = GameState._random.Next(1, 4);
+                    GameState._bricks[i ,j] = new Brick(aux, type);
                     
                     /*Graphics g = this.CreateGraphics();
                     g.DrawRectangle(Pens.Blue, aux);
@@ -128,15 +130,97 @@ namespace Metronoid
 
         private void MainGame_MouseMove(object sender, MouseEventArgs e)
         {
-            if (e.X > (_player.Hitbox.Width/2) && e.X < (Width - (_player.Hitbox.Width/2)))
+            if (e.X > (GameState._player.Hitbox.Width/2) && e.X < (Width - (GameState._player.Hitbox.Width/2)))
             {
-                _player.Hitbox.X = e.X - (_player.Hitbox.Width/2);
+                GameState._player.Hitbox.X = e.X - (GameState._player.Hitbox.Width/2);
                 //_ball.Hitbox.X = _player.Hitbox.X + (_player.Hitbox.Width / 2) - (_ball.Hitbox.Width / 2);
-                _ball.Hitbox.X = e.X - (_ball.Hitbox.Width/2);
+                if (GameState._ball.State == 0) //La pelota se encuentra en la plataforma
+                {
+                    GameState._ball.Hitbox.X = e.X - (GameState._ball.Hitbox.Width/2);
+                }
                 //.Show(_player.Hitbox.Y.ToString());
                 //_ball.Hitbox.Y = _player.Hitbox.Y + _ball.Hitbox.Height;
             }
             
+        }
+
+        /// <summary>
+        /// Metodos para las fisicas de la pelota
+        /// </summary>
+        /// <returns></returns>
+        private void BounceBall()
+        {
+            //Pelota
+            if (GameState._ball.State == 1)
+            {
+                GameState._ball.Hitbox.X += GameState._ball.XSpeed;
+                GameState._ball.Hitbox.Y += GameState._ball.YSpeed;
+                
+                //Bordes Laterales
+                if (GameState._ball.Hitbox.X + GameState._ball.Hitbox.Width >= Width)
+                {
+                    GameState._ball.XSpeed = Math.Abs(GameState._ball.XSpeed) * (-1);
+                } else if (GameState._ball.Hitbox.X <= 0)
+                {
+                    GameState._ball.XSpeed = Math.Abs(GameState._ball.XSpeed);
+                }
+                
+                //Borde Superior
+                if (GameState._ball.Hitbox.Y <= 0)
+                {
+                    GameState._ball.YSpeed = Math.Abs(GameState._ball.YSpeed);
+                }
+                //Bloques
+                if (GameState._ball.Hitbox.Y <= Height*0.3)
+                {
+                    for (int i = GameState._lvlInfo.YAxis-1; i >= 0; i--)
+                    {
+                        for (int j = 0; j < GameState._lvlInfo.XAxis; j++)
+                        {
+                            if (GameState._ball.Hitbox.IntersectsWith(GameState._bricks[i, j].Hitbox) && GameState._bricks[i, j].Active)
+                            {
+                                GameState._bricks[i, j].Type -= 1;
+                                if (GameState._bricks[i, j].Type == 0)
+                                {
+                                    GameState._bricks[i, j].Active = false;
+                                }
+
+                                //GameState._ball.XSpeed *= -1;
+                                GameState._ball.YSpeed *= -1;
+                                return;
+                            }
+                        }
+                    }
+                }
+                
+                //Jugador
+
+                if (GameState._ball.Hitbox.Bottom >= Height*0.8)
+                {
+                    if (GameState._ball.Hitbox.IntersectsWith(GameState._player.Hitbox))
+                    {
+                        GameState._ball.YSpeed *= -1;
+                        //GameState._ball.Hitbox.Y = GameState._player.Hitbox.Y-GameState._ball.Hitbox.Height;
+                        return;
+                    }
+                }
+
+                if (GameState._ball.Hitbox.Y + GameState._ball.Hitbox.Height >= Height)
+                {
+                    GameState._ball.State = 0;
+                    GameState._ball.Hitbox.X = GameState._player.Hitbox.X + (GameState._player.Hitbox.Width / 2) - (GameState._ball.Hitbox.Width / 2);
+                    GameState._ball.Hitbox.Y = GameState._player.Hitbox.Y - GameState._ball.Hitbox.Height;
+                    GameState._ball.XSpeed = Math.Abs(GameState._ball.XSpeed);
+                    GameState._ball.YSpeed = Math.Abs(GameState._ball.YSpeed) * -1;
+                }
+            }
+
+        }
+
+        private void MainGame_MouseClick(object sender, MouseEventArgs e)
+        {
+            GameState.Status = 1;
+            GameState._ball.State = 1;
         }
     }
 }
