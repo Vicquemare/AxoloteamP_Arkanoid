@@ -16,7 +16,6 @@ namespace Metronoid
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
         }
-        private Bitmap score = null;
         
 
         private void MainGame_Shown(object sender, EventArgs e)
@@ -44,6 +43,9 @@ namespace Metronoid
             GameState._lvlInfo.UiElements.LifeTextHitbox = new Rectangle((GameState._lvlInfo.UiElements.Portrait.Hitbox.X + GameState._lvlInfo.UiElements.Portrait.Hitbox.Width), yLife , lifeWidth * GameState._maxLife,lifeWidth);
             
             LoadBricks();
+
+            GameState._reward = new[] {100, 400, 500};
+            GameState._endGame = GameState._lvlInfo.XAxis * GameState._lvlInfo.YAxis;
             GameState._engine = new Engine(this);
             
             GameState._engine.Load(GameState._lvlInfo);
@@ -110,7 +112,7 @@ namespace Metronoid
                 e.Graphics.FillRectangle(Brushes.Green, rectangle3);
             }*/
             
-            e.Graphics.DrawString("score: 19062020", GameState._lvlInfo.DrawFont, Brushes.White, GameState._lvlInfo.UiElements.ScoreHitbox, GameState._lvlInfo.DrawFormat);
+            e.Graphics.DrawString("score: "+GameState._score.ToString(), GameState._lvlInfo.DrawFont, Brushes.White, GameState._lvlInfo.UiElements.ScoreHitbox, GameState._lvlInfo.DrawFormat);
             e.Graphics.DrawString("lives: ", GameState._lvlInfo.DrawFont, Brushes.White, GameState._lvlInfo.UiElements.LifeTextHitbox, GameState._lvlInfo.DrawFormat);
 
         }
@@ -206,9 +208,16 @@ namespace Metronoid
                             if (GameState._ball.Hitbox.IntersectsWith(GameState._bricks[i, j].Hitbox) && GameState._bricks[i, j].Active)
                             {
                                 GameState._bricks[i, j].Type -= 1;
+                                GameState._score += GameState._reward[GameState._bricks[i, j].Type];
                                 if (GameState._bricks[i, j].Type == 0)
                                 {
                                     GameState._bricks[i, j].Active = false;
+                                    GameState._endGame -= 1;
+                                    if (GameState._endGame == 0)
+                                    {
+                                        GameState.Status = 1;
+                                        MessageBox.Show("Juego terminado awa");
+                                    }
                                 }
 
                                 //GameState._ball.XSpeed *= -1;

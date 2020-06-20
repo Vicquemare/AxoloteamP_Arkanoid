@@ -13,8 +13,8 @@ namespace Metronoid.Classes.Game.Elements
         {
             Hitbox = hitbox;
             State = 0;
-            XSpeed = 20;
-            YSpeed = -5;
+            XSpeed = 20*2;
+            YSpeed = -5*2;
         }
     }
 }
