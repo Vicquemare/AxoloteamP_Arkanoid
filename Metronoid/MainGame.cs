@@ -38,10 +38,11 @@ namespace Metronoid
                 GameState._life[i] = new Life(new Rectangle(i* lifeWidth + xLife, yLife, lifeWidth, lifeWidth) );
             }
             //HitboxDelScore
-            GameState._lvlInfo.UiElements.ScoreHitbox = new Rectangle((GameState._maxLife * lifeWidth + xLife), yLife , (int) (GameState._lvlInfo.AnimBackgrounds.UiHitbox.Width * 0.5),lifeWidth);
-            // HitboxDelTextoDeVidas
-            GameState._lvlInfo.UiElements.LifeTextHitbox = new Rectangle((GameState._lvlInfo.UiElements.Portrait.Hitbox.X + GameState._lvlInfo.UiElements.Portrait.Hitbox.Width), yLife , lifeWidth * GameState._maxLife,lifeWidth);
-            
+            GameState._lvlInfo.UiElements.ScoreHitbox = new Rectangle((GameState._maxLife * lifeWidth + xLife + lifeWidth * 2), yLife , (int) (GameState._lvlInfo.AnimBackgrounds.UiHitbox.Width * 0.28),lifeWidth);
+            //HitboxDelTextoDeVidas
+            GameState._lvlInfo.UiElements.LifeTextHitbox = new Rectangle((GameState._lvlInfo.UiElements.Portrait.Hitbox.X + GameState._lvlInfo.UiElements.Portrait.Hitbox.Width + lifeWidth), yLife , lifeWidth * GameState._maxLife,lifeWidth);
+            //HitboxDelTextoCombo
+            GameState._lvlInfo.UiElements.ComboHitbox = new Rectangle((GameState._lvlInfo.UiElements.ScoreHitbox.X + GameState._lvlInfo.UiElements.ScoreHitbox.Width),yLife,GameState._maxLife * lifeWidth + lifeWidth,lifeWidth);
             LoadBricks();
 
             GameState._reward = new[] {100, 400, 500};
@@ -114,23 +115,8 @@ namespace Metronoid
             
             e.Graphics.DrawString("score: "+GameState._score.ToString(), GameState._lvlInfo.DrawFont, Brushes.White, GameState._lvlInfo.UiElements.ScoreHitbox, GameState._lvlInfo.DrawFormat);
             e.Graphics.DrawString("lives: ", GameState._lvlInfo.DrawFont, Brushes.White, GameState._lvlInfo.UiElements.LifeTextHitbox, GameState._lvlInfo.DrawFormat);
-
+            e.Graphics.DrawString("combo: x"+GameState._combo.ToString(), GameState._lvlInfo.DrawFont, Brushes.White, GameState._lvlInfo.UiElements.ComboHitbox, GameState._lvlInfo.DrawFormat);
         }
-        
-        /* private void updateScore(string texto)
-        {
-            Bitmap bmp = new Bitmap(800,800);
-            RectangleF rectf = new RectangleF(70, 90, 300, 300);
-            Graphics g = Graphics.FromImage(bmp);
-            g.SmoothingMode = SmoothingMode.AntiAlias;
-            g.InterpolationMode = InterpolationMode.HighQualityBicubic;
-            g.PixelOffsetMode = PixelOffsetMode.HighQuality;
-            g.DrawString(texto, new Font("Metroid Fusion",24), Brushes.White, rectf);
-
-            g.Flush();
-
-            score = bmp;
-        }*/
 
         private void LoadBricks()
         {
@@ -208,7 +194,8 @@ namespace Metronoid
                             if (GameState._ball.Hitbox.IntersectsWith(GameState._bricks[i, j].Hitbox) && GameState._bricks[i, j].Active)
                             {
                                 GameState._bricks[i, j].Type -= 1;
-                                GameState._score += GameState._reward[GameState._bricks[i, j].Type];
+                                GameState._score += GameState._reward[GameState._bricks[i, j].Type] + (50 * GameState._combo);
+                                GameState._combo += 1;
                                 if (GameState._bricks[i, j].Type == 0)
                                 {
                                     GameState._bricks[i, j].Active = false;
@@ -254,6 +241,7 @@ namespace Metronoid
                 {
                     if (GameState._ball.Hitbox.IntersectsWith(GameState._player.Hitbox))
                     {
+                        GameState._combo = 0;
                         GameState._ball.YSpeed *= -1;
                         GameState._ball.Hitbox.Y = GameState._player.Hitbox.Y-GameState._ball.Hitbox.Height;
                         

@@ -18,6 +18,7 @@ namespace Metronoid.Classes.Game
         public static int _score = 0;
         public static int[] _reward = null;
         public static int _endGame;
+        public static int _combo = 0;
         public static readonly Random _random = new Random();
     }
 }

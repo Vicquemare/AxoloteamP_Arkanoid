@@ -22,6 +22,7 @@ namespace Metronoid.Classes.Game.Levels
             public AnimLife Life;
             public Rectangle ScoreHitbox = new Rectangle(); 
             public Rectangle LifeTextHitbox = new Rectangle(); 
+            public Rectangle ComboHitbox = new Rectangle(); 
         } 
     }
 }
