@@ -16,7 +16,10 @@ namespace Metronoid
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainGame());
+            _mainMenu = new MainMenu();
+            Application.Run(_mainMenu);
         }
+        public static MainMenu _mainMenu = null;
+        public static MainGame _mainGame = null;
     }
 }
