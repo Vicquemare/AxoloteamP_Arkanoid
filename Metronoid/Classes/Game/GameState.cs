@@ -15,6 +15,7 @@ namespace Metronoid.Classes.Game
         public static MorphBall _ball = null;
         public static int _maxLife = 3;
         public static Life[] _life = null;
+        public static int _currentLife = _maxLife;
         public static int _score = 0;
         public static int[] _reward = null;
         public static int _endGame;

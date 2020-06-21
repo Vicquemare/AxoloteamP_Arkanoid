@@ -100,11 +100,14 @@ namespace Metronoid
             e.Graphics.DrawImage(GameState._lvlInfo.AnimBackgrounds.animUI.GetSprite(), GameState._lvlInfo.AnimBackgrounds.UiHitbox);
             //e.Graphics.DrawRectangle(Pens.Chartreuse, GameState._lvlInfo.AnimBackgrounds.UiHitbox);
             e.Graphics.DrawImage(GameState._lvlInfo.UiElements.Portrait.anim.GetSprite(), GameState._lvlInfo.UiElements.Portrait.Hitbox);
-            for (int i = 0; i < GameState._maxLife; i++)
+            for (int i = 0; i < GameState._currentLife; i++)
             {
                 e.Graphics.DrawImage(GameState._lvlInfo.UiElements.Life.anim.GetSprite(), GameState._life[i].Hitbox);
-                //e.Graphics.DrawRectangle(Pens.Cyan,_life[i].Hitbox);
-                
+            }
+            // for i= current life end in maxlife 
+            for (int i = GameState._currentLife; i < GameState._maxLife; i++)
+            {
+                e.Graphics.DrawImage(GameState._lvlInfo.UiElements.Life.anim1.GetSprite(), GameState._life[i].Hitbox);
             }
             
             /*Rectangle rectangle3 = Rectangle.Intersect(GameState._player.Hitbox, GameState._ball.Hitbox);
@@ -252,11 +255,23 @@ namespace Metronoid
 
                 if (GameState._ball.Hitbox.Y + GameState._ball.Hitbox.Height >= Height)
                 {
-                    GameState._ball.State = 0;
-                    GameState._ball.Hitbox.X = GameState._player.Hitbox.X + (GameState._player.Hitbox.Width / 2) - (GameState._ball.Hitbox.Width / 2);
-                    GameState._ball.Hitbox.Y = GameState._player.Hitbox.Y - GameState._ball.Hitbox.Height;
-                    GameState._ball.XSpeed = Math.Abs(GameState._ball.XSpeed);
-                    GameState._ball.YSpeed = Math.Abs(GameState._ball.YSpeed) * -1;
+                    if (GameState._currentLife > 0)
+                    {
+                        GameState._combo = 0;
+                        GameState._ball.State = 0;
+                        GameState._ball.Hitbox.X = GameState._player.Hitbox.X + (GameState._player.Hitbox.Width / 2) - (GameState._ball.Hitbox.Width / 2);
+                        GameState._ball.Hitbox.Y = GameState._player.Hitbox.Y - GameState._ball.Hitbox.Height;
+                        GameState._ball.XSpeed = Math.Abs(GameState._ball.XSpeed);
+                        GameState._ball.YSpeed = Math.Abs(GameState._ball.YSpeed) * -1;
+                        GameState._currentLife -= 1;
+                    }
+                    else
+                    {
+                        GameState.Status = 0;
+                        MessageBox.Show("Game Over");
+                        Application.Exit();
+                    }
+                    
                 }
             }
 

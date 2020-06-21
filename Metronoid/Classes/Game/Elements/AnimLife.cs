@@ -19,6 +19,7 @@ namespace Metronoid.Classes.Game.Elements
         private static Metronoid.Classes.Game.Graphics.Templates.Animation _animIddle1 = new Metronoid.Classes.Game.Graphics.Templates.Animation(_idle1, 20);
         
         public Metronoid.Classes.Game.Graphics.Templates.Animation anim = _animIddle;
+        public Metronoid.Classes.Game.Graphics.Templates.Animation anim1 = _animIddle1;
 
         public static Bitmap[] Idle
         {
@@ -32,7 +33,7 @@ namespace Metronoid.Classes.Game.Elements
         
         public static Bitmap[] Idle1
         {
-            get => _idle;
+            get => _idle1;
         }
 
         public static Animation AnimIddle1
