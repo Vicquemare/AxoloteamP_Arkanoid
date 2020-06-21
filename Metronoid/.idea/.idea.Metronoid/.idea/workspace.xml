@@ -20,25 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7d9d210-860d-4c97-a73d-4bc09826f753" name="Default Changelist" comment="A">
-      <change afterPath="$PROJECT_DIR$/Views/FinalScore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Metronoid/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Metronoid/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Metronoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Metronoid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Metronoid/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Metronoid/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Game/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Game/GameState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Game/Levels/Level1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Game/Levels/Level1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainGame.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainGame.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainGame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainMenu.resx" beforeDir="false" afterPath="$PROJECT_DIR$/MainMenu.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Metronoid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Metronoid.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/Metronoid.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Metronoid.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/Metronoid.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Metronoid.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.Form1.resources" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.Form1.resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Game/Elements/Morphball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Game/Elements/Morphball.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,37 +32,37 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Graphics/Templates/Animation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimPlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimLife.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimPortrait.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimBrick.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimMorphBall.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MainGame.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Form1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MainMenu.Designer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/FinalScore.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Engine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MainGame.resx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/Brick.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Levels/Level1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6FF151C8-A24F-45E5-B6E3-6BC715719162/d0/6abad933/MainMenu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Levels/Level.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/FinalScore.Designer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/Player.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/Morphball.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Properties/Resources.resx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MainGame.Designer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Graphics/Animations/Megaman.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/GameState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/Portrait.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/Life.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Classes/Game/Graphics/Templates/Sprite.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB3709D4-3DAE-4F5F-B978-5D5202B86B97/9c/f217adaf/Int32.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimBackground.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimBrick.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MainGame.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/Life.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/Brick.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MainGame.resx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/Portrait.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimPortrait.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimLife.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/Morphball.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Elements/AnimMorphBall.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Levels/Level.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Form1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Levels/Level1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MainGame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/GameState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Engine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Graphics/Animations/Megaman.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Graphics/Templates/Sprite.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Graphics/Templates/Animation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/FinalScore.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/FinalScore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MainMenu.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Properties/Resources.resx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -113,9 +96,9 @@
         <option value="$PROJECT_DIR$/Views/FinalScore.Designer.cs" />
         <option value="$PROJECT_DIR$/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/GameState.cs" />
-        <option value="$PROJECT_DIR$/MainGame.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/Levels/Level1.cs" />
         <option value="$PROJECT_DIR$/Views/FinalScore.cs" />
+        <option value="$PROJECT_DIR$/MainGame.cs" />
       </list>
     </option>
   </component>

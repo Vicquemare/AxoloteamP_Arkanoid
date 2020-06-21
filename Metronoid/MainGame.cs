@@ -170,8 +170,8 @@ namespace Metronoid
             //Pelota
             if (GameState._ball.State == 1)
             {
-                GameState._ball.Hitbox.X += GameState._ball.XSpeed;
-                GameState._ball.Hitbox.Y += GameState._ball.YSpeed;
+                GameState._ball.Hitbox.X += Convert.ToInt32(GameState._ball.XSpeed);
+                GameState._ball.Hitbox.Y += Convert.ToInt32(GameState._ball.YSpeed);
                 
                 //Bordes Laterales
                 if (GameState._ball.Hitbox.X + GameState._ball.Hitbox.Width >= Width)
@@ -198,6 +198,8 @@ namespace Metronoid
                             {
                                 GameState._bricks[i, j].Type -= 1;
                                 GameState._score += GameState._reward[GameState._bricks[i, j].Type] + (50 * GameState._combo);
+                                GameState._ball.XSpeed *= 1.01;
+                                GameState._ball.YSpeed *= 1.01;
                                 GameState._combo += 1;
                                 if (GameState._bricks[i, j].Type == 0)
                                 {

@@ -6,8 +6,8 @@ namespace Metronoid.Classes.Game.Elements
     {
         public Rectangle Hitbox;
         public int State; // 0 on player, 1 bouncing
-        public int XSpeed;
-        public int YSpeed;
+        public double XSpeed;
+        public double YSpeed;
 
         public MorphBall(Rectangle hitbox)
         {
