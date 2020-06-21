@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\perry_000\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\perry_000\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Metronoid.-1708248919.00" t="ExcludeRecursive" />
-    <e p="C:\Users\perry_000\Desktop\Arkanoid\Metronoid" t="IncludeRecursive">
+    <e p="C:\Users\paper\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\paper\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Metronoid.195871157.00" t="ExcludeRecursive" />
+    <e p="C:\Users\paper\Documents\Progra\Metronoid\Metronoid" t="IncludeRecursive">
       <e p="App.config" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="Classes" t="Include">
@@ -47,6 +47,9 @@
       <e p="MainGame.cs" t="Include" />
       <e p="MainGame.Designer.cs" t="Include" />
       <e p="MainGame.resx" t="Include" />
+      <e p="MainMenu.cs" t="Include" />
+      <e p="MainMenu.Designer.cs" t="Include" />
+      <e p="MainMenu.resx" t="Include" />
       <e p="Metronoid.csproj" t="IncludeRecursive" />
       <e p="Metronoid.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
@@ -58,6 +61,11 @@
         <e p="Resources.resx" t="Include" />
         <e p="Settings.Designer.cs" t="Include" />
         <e p="Settings.settings" t="Include" />
+      </e>
+      <e p="Views" t="Include">
+        <e p="FinalScore.cs" t="Include" />
+        <e p="FinalScore.Designer.cs" t="Include" />
+        <e p="FinalScore.resx" t="Include" />
       </e>
     </e>
   </component>

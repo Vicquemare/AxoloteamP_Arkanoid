@@ -206,7 +206,9 @@ namespace Metronoid
                                     if (GameState._endGame == 0)
                                     {
                                         GameState.Status = 1;
-                                        MessageBox.Show("Juego terminado awa");
+                                        //MessageBox.Show("Juego terminado awa");
+                                        EndGame();
+                                        return;
                                     }
                                 }
 
@@ -268,8 +270,9 @@ namespace Metronoid
                     else
                     {
                         GameState.Status = 0;
-                        MessageBox.Show("Game Over");
-                        Application.Exit();
+                        //MessageBox.Show("Game Over");
+                        EndGame();
+                        return;
                     }
                     
                 }
@@ -303,5 +306,17 @@ namespace Metronoid
                 hitSomethingOnTheLeft, 
             };
         }
+        
+        private void EndGame()
+        {
+            Program._mainMenu.DisplayScore(GameState._score, GameState._currentLife);
+            this.Close();
+        }
+
+        private void MainGame_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Program._mainMenu.Show();
+        }
+        
     }
 }

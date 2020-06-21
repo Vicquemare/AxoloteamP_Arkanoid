@@ -18,3 +18,5 @@ C:\Users\perry_000\Desktop\Arkanoid\Metronoid\obj\Debug\Metronoid.Properties.Res
 C:\Users\perry_000\Desktop\Arkanoid\Metronoid\obj\Debug\Metronoid.csproj.GenerateResource.cache
 C:\Users\perry_000\Desktop\Arkanoid\Metronoid\obj\Debug\Metronoid.exe
 C:\Users\perry_000\Desktop\Arkanoid\Metronoid\obj\Debug\Metronoid.pdb
+C:\Users\paper\Documents\Progra\Metronoid\Metronoid\obj\Debug\Metronoid.MainMenu.resources
+C:\Users\paper\Documents\Progra\Metronoid\Metronoid\obj\Debug\Metronoid.Views.FinalScore.resources

@@ -21,5 +21,23 @@ namespace Metronoid.Classes.Game
         public static int _endGame;
         public static int _combo = 0;
         public static readonly Random _random = new Random();
+
+        public static void Reset()
+        {
+            _engine.Stop();
+            Status = 0; //0 playing 1 end
+            _engine = null;
+            _lvlInfo = null;
+            
+            _player = null;
+            _ball = null;
+            _maxLife = 3;
+            _life = null;
+            _currentLife = _maxLife;
+            _score = 0;
+            _reward = null;
+            
+            _combo = 0;
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Metronoid.Classes.Game;
 using Metronoid.Views;
 
 namespace Metronoid
@@ -37,7 +38,7 @@ namespace Metronoid
             _current = new FinalScore(sco, lives) {Dock = DockStyle.Fill};
             tableLayoutPanel1.Controls.Add(_current, 2, 0);
             tableLayoutPanel1.SetRowSpan(_current, 2);
-            
+            GameState.Reset();
         }
 
         private void button1_Click(object sender, EventArgs e)

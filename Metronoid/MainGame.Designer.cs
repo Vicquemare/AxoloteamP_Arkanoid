@@ -42,6 +42,7 @@ namespace Metronoid
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainGame";
             this.Text = "MainGame";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainGame_FormClosing);
             this.Load += new System.EventHandler(this.MainGame_Load);
             this.Shown += new System.EventHandler(this.MainGame_Shown);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.MainGame_Paint);
