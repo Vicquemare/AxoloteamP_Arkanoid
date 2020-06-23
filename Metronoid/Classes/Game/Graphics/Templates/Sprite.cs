@@ -23,7 +23,7 @@ namespace Metronoid.Classes.Game.Graphics.Templates
             try {
                 sprite = new Bitmap(file);
             } catch (IOException e) {
-                MessageBox.Show(e.Message);
+                MessageBox.Show("Error al cargar el archivo de destino");
             }
 
             return sprite;
@@ -93,14 +93,16 @@ namespace Metronoid.Classes.Game.Graphics.Templates
                     break;
             }
 
-
+            try{
             if (!_notSquare) {
                 return spriteSheet.Clone(new Rectangle(xGrid * _tileSize, yGrid * _tileSize, _tileSize, _tileSize), spriteSheet.PixelFormat );
             } else {
                 _notSquare = false;
                 return spriteSheet.Clone(new Rectangle(xGrid * _tileSizeX, yGrid * _tileSizeY, _tileSizeX, _tileSizeY), spriteSheet.PixelFormat );
-
-
+            }
+            }
+            } catch (IOException e) {
+                MessageBox.Show("Error al cargar el elemento");
             }
 
 
