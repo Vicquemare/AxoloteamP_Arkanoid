@@ -1,0 +1,15 @@
+CREATE TABLE users(
+	iduser SERIAL PRIMARY KEY,
+	nick VARCHAR(50) UNIQUE NOT NULL
+);
+
+CREATE TABLE score(
+	ids SERIAL PRIMARY KEY,
+	iduser INT NOT NULL,
+	createdate DATE NOT NULL,
+	score INT NOT NULL,
+	CONSTRAINT fk_user 
+	FOREIGN KEY (iduser) REFERENCES users(iduser)
+)
+
+SELECT * FROM score order by score DESC FETCH FIRST 10 ROWS ONLY
