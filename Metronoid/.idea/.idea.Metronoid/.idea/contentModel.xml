@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\perry_000\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\perry_000\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Metronoid.-1708248919.00" t="ExcludeRecursive" />
-    <e p="C:\Users\perry_000\Desktop\Arkanoid\Metronoid" t="IncludeRecursive">
+    <e p="C:\Users\andre\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\andre\.Rider2019.3\system\resharper-host\Local\Transient\ReSharperHost\v193\SolutionCaches\_Metronoid.1239979019.00" t="ExcludeRecursive" />
+    <e p="C:\Users\andre\Desktop\AxoloteamP_Arkanoid\Metronoid" t="IncludeRecursive">
       <e p="App.config" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="Classes" t="Include">
-        <e p="Controllers" t="Include" />
+        <e p="Controllers" t="Include">
+          <e p="validator.cs" t="Include" />
+        </e>
         <e p="Game" t="Include">
           <e p="Elements" t="Include">
             <e p="AnimBackground.cs" t="Include" />
@@ -39,7 +41,10 @@
             <e p="Level1.cs" t="Include" />
           </e>
         </e>
-        <e p="Models" t="Include" />
+        <e p="Models" t="Include">
+          <e p="adduser.cs" t="Include" />
+          <e p="connexion.cs" t="Include" />
+        </e>
       </e>
       <e p="Form1.cs" t="Include" />
       <e p="Form1.Designer.cs" t="Include" />
@@ -54,6 +59,7 @@
       <e p="Metronoid.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
+      <e p="packages.config" t="Include" />
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
         <e p="AssemblyInfo.cs" t="Include" />
@@ -66,6 +72,9 @@
         <e p="FinalScore.cs" t="Include" />
         <e p="FinalScore.Designer.cs" t="Include" />
         <e p="FinalScore.resx" t="Include" />
+        <e p="login.cs" t="Include" />
+        <e p="login.Designer.cs" t="Include" />
+        <e p="login.resx" t="Include" />
       </e>
     </e>
   </component>
