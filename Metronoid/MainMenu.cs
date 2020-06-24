@@ -27,9 +27,11 @@ namespace Metronoid
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Program._mainGame = new MainGame();
-            this.Hide();
-            Program._mainGame.Show();
+            tableLayoutPanel1.Controls.Remove(_current);
+            _current = new login() {Dock = DockStyle.Fill};
+            tableLayoutPanel1.Controls.Add(_current, 2, 0);
+            tableLayoutPanel1.SetRowSpan(_current, 2);
+
         }
 
         public void DisplayScore(int sco, int lives)
@@ -44,7 +46,15 @@ namespace Metronoid
         private void button1_Click(object sender, EventArgs e)
         {
             tableLayoutPanel1.Controls.Remove(_current);
-            _current = new login();
+           
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel1.Controls.Remove(_current);
+            _current = new Top() {Dock = DockStyle.Fill};
+            tableLayoutPanel1.Controls.Add(_current, 2, 0);
+            tableLayoutPanel1.SetRowSpan(_current, 2);
         }
     }
 }
