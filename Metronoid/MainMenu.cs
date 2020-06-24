@@ -44,7 +44,7 @@ namespace Metronoid
         private void button1_Click(object sender, EventArgs e)
         {
             tableLayoutPanel1.Controls.Remove(_current);
-            _current = null;
+            _current = new login();
         }
     }
 }

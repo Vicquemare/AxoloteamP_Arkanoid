@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
+using Metronoid.Classes.Models;
 
 
 namespace Metronoid.Views
@@ -22,12 +23,18 @@ namespace Metronoid.Views
                             if (!users.Verifyusername())
                             {
                                 MessageBox.Show("Bienvenido");
+                                Program._mainGame = new MainGame();
+                                this.Hide();
+                                Program._mainGame.Show();
                                 
                             }
                             else
                             {
                                 MessageBox.Show("Usuario inexistente, se agregara para iniciar");
                                 users.InsertUser();
+                                Program._mainGame = new MainGame();
+                                this.Hide();
+                                Program._mainGame.Show();
                                 
                             }
                         }

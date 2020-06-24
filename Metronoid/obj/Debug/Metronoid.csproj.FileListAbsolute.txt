@@ -56,3 +56,4 @@ C:\Users\andre\Desktop\AxoloteamP_Arkanoid\Metronoid\bin\Debug\System.Threading.
 C:\Users\andre\Desktop\AxoloteamP_Arkanoid\Metronoid\bin\Debug\System.ValueTuple.xml
 C:\Users\andre\Desktop\AxoloteamP_Arkanoid\Metronoid\obj\Debug\Metronoid.exe.config
 C:\Users\andre\Desktop\AxoloteamP_Arkanoid\Metronoid\obj\Debug\Metronoid.csproj.CopyComplete
+C:\Users\andre\Desktop\AxoloteamP_Arkanoid\Metronoid\obj\Debug\Metronoid.Views.login.resources
