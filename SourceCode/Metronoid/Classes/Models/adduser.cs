@@ -36,7 +36,7 @@ namespace Metronoid.Classes.Models
             cn.Open();
             sql = "SELECT iduser FROM users  WHERE nick = @nick;";
             cmd = new NpgsqlCommand(sql, cn);
-            cmd.Parameters.AddWithValue("username",username );
+            cmd.Parameters.AddWithValue("nick",username );
             DataTable  dt  = new DataTable();
             dt.Load(cmd.ExecuteReader());
             cn.Close();
@@ -49,7 +49,7 @@ namespace Metronoid.Classes.Models
             cn.Open();
             sql = "SELECT iduser FROM users u WHERE  u.nick=@nick";
             cmd = new NpgsqlCommand(sql, cn);
-            cmd.Parameters.AddWithValue("username", username);
+            cmd.Parameters.AddWithValue("nick", username);
             dt  = new DataTable();
             dt.Load(cmd.ExecuteReader());
             cn.Close();
@@ -65,7 +65,7 @@ namespace Metronoid.Classes.Models
             cn.Open();
             sql = "INSERT INTO users(nick) VALUES (@nick);";
             cmd = new NpgsqlCommand(sql, cn);
-            cmd.Parameters.AddWithValue("username", username);
+            cmd.Parameters.AddWithValue("nick", username);
             cmd.Prepare();
             var result = cmd.ExecuteNonQuery();
             cn.Close();

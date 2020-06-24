@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\andre\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\andre\.Rider2019.3\system\resharper-host\Local\Transient\ReSharperHost\v193\SolutionCaches\_Metronoid.1239979019.00" t="ExcludeRecursive" />
-    <e p="C:\Users\andre\Desktop\AxoloteamP_Arkanoid\Metronoid" t="IncludeRecursive">
+    <e p="C:\Users\paper\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\paper\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Metronoid.-1460148191.00" t="ExcludeRecursive" />
+    <e p="C:\Users\paper\Documents\Progra\Metronoid\SourceCode\Metronoid" t="IncludeRecursive">
       <e p="App.config" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="Classes" t="Include">

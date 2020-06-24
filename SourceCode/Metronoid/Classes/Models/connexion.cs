@@ -19,7 +19,7 @@ namespace Metronoid.Classes.Models
             host = "localhost";
             user_id = "postgres";
             port = "5432";
-            password = "louis1769";
+            password = "Cynth14";
             database = "juego";
         }
         

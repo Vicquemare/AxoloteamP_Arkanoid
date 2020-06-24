@@ -56,5 +56,7 @@ namespace Metronoid
             tableLayoutPanel1.Controls.Add(_current, 2, 0);
             tableLayoutPanel1.SetRowSpan(_current, 2);
         }
+
+        
     }
 }
