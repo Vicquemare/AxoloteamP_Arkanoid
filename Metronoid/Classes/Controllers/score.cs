@@ -1,4 +1,6 @@
-﻿namespace Metronoid.Classes.Controllers
+﻿
+
+namespace Metronoid.Classes.Controllers
 {
     public class score
     {
