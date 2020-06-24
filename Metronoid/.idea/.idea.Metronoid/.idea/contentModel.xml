@@ -8,6 +8,7 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="Classes" t="Include">
         <e p="Controllers" t="Include">
+          <e p="score.cs" t="Include" />
           <e p="validator.cs" t="Include" />
         </e>
         <e p="Game" t="Include">
@@ -44,6 +45,7 @@
         <e p="Models" t="Include">
           <e p="adduser.cs" t="Include" />
           <e p="connexion.cs" t="Include" />
+          <e p="Viewtop.cs" t="Include" />
         </e>
       </e>
       <e p="Form1.cs" t="Include" />
@@ -75,6 +77,9 @@
         <e p="login.cs" t="Include" />
         <e p="login.Designer.cs" t="Include" />
         <e p="login.resx" t="Include" />
+        <e p="Top.cs" t="Include" />
+        <e p="Top.Designer.cs" t="Include" />
+        <e p="Top.resx" t="Include" />
       </e>
     </e>
   </component>

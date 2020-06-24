@@ -100,16 +100,16 @@ namespace Metronoid.Classes.Game.Graphics.Templates
                 _notSquare = false;
                 return spriteSheet.Clone(new Rectangle(xGrid * _tileSizeX, yGrid * _tileSizeY, _tileSizeX, _tileSizeY), spriteSheet.PixelFormat );
             }
-            }
-            } catch (IOException e) {
-                MessageBox.Show("Error al cargar el elemento");
-            }
-
-
-
-
-            //return spriteSheet.getSubimage(xGrid * 168, yGrid * 211, 168, 211);
+            
+        } catch (IOException e) {
+            MessageBox.Show("Error al cargar el elemento");
         }
+
+            return null;
+        }
+        
+        //return spriteSheet.getSubimage(xGrid * 168, yGrid * 211, 168, 211);
+        
 
     }
 }

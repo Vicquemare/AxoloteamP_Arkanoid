@@ -1,4 +1,7 @@
 ﻿using System.Drawing;
+using System;
+using System.IO;
+using System.Windows.Forms;
 using Metronoid.Classes.Game.Elements;
 using Metronoid.Classes.Game.Graphics.Elements;
 
@@ -21,7 +24,7 @@ namespace Metronoid.Classes.Game.Levels
             DrawFormat.LineAlignment = StringAlignment.Center;
             try{
             DrawFont = new Font("Metroid Fusion", 24);
-            }
+            
             } catch (IOException e) {
                 MessageBox.Show("Error al cargar el elemento");
             }

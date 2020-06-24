@@ -92,6 +92,7 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Classes\Controllers\score.cs" />
         <Compile Include="Classes\Controllers\validator.cs" />
         <Compile Include="Classes\Game\Elements\AnimBackground.cs" />
         <Compile Include="Classes\Game\Elements\AnimBrick.cs" />
@@ -114,6 +115,7 @@
         <Compile Include="Classes\Game\Levels\Level1.cs" />
         <Compile Include="Classes\Models\adduser.cs" />
         <Compile Include="Classes\Models\connexion.cs" />
+        <Compile Include="Classes\Models\Viewtop.cs" />
         <Compile Include="Form1.cs">
             <SubType>Form</SubType>
         </Compile>
@@ -146,6 +148,12 @@
         <Compile Include="Views\login.Designer.cs">
           <DependentUpon>login.cs</DependentUpon>
         </Compile>
+        <Compile Include="Views\Top.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Views\Top.Designer.cs">
+          <DependentUpon>Top.cs</DependentUpon>
+        </Compile>
         <EmbeddedResource Include="Form1.resx">
           <DependentUpon>Form1.cs</DependentUpon>
         </EmbeddedResource>
@@ -169,6 +177,9 @@
         </EmbeddedResource>
         <EmbeddedResource Include="Views\login.resx">
           <DependentUpon>login.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Views\Top.resx">
+          <DependentUpon>Top.cs</DependentUpon>
         </EmbeddedResource>
         <None Include="packages.config" />
         <None Include="Properties\Settings.settings">

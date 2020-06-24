@@ -19,15 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d9d210-860d-4c97-a73d-4bc09826f753" name="Default Changelist" comment="A">
+    <list default="true" id="e7d9d210-860d-4c97-a73d-4bc09826f753" name="Default Changelist" comment="(T-T)">
+      <change afterPath="$PROJECT_DIR$/Classes/Models/Viewtop.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/Top.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Metronoid/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Metronoid/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Metronoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Metronoid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/login.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Views/login.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Game/Graphics/Templates/Sprite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Game/Graphics/Templates/Sprite.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Game/Levels/Level1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Game/Levels/Level1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainMenu.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainMenu.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Metronoid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Metronoid.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/Metronoid.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Metronoid.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/Metronoid.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Metronoid.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.csproj.GenerateResource.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Metronoid.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Metronoid.pdb" afterDir="false" />
     </list>
@@ -81,12 +84,16 @@
     <setting file="file://$PROJECT_DIR$/Views/login.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/login.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Classes/Game/Graphics/Animations/Megaman.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Game/Graphics/Templates/Frame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Classes/Game/Graphics/Templates/Sprite.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Classes/Game/Graphics/Templates/Animation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MainMenu.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MainGame.resx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MainGame.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Form1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Top.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Top.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Classes/Models/Viewtop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MainGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -111,7 +118,6 @@
         <option value="$PROJECT_DIR$/Classes/Game/Elements/AnimMorphBall.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/Elements/Player.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/Elements/AnimBackground.cs" />
-        <option value="$PROJECT_DIR$/Classes/Game/Graphics/Templates/Sprite.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/Elements/Portrait.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/Elements/AnimPortrait.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/Elements/Life.cs" />
@@ -122,7 +128,6 @@
         <option value="$PROJECT_DIR$/MainMenu.Designer.cs" />
         <option value="$PROJECT_DIR$/Views/FinalScore.Designer.cs" />
         <option value="$PROJECT_DIR$/Classes/Game/GameState.cs" />
-        <option value="$PROJECT_DIR$/Classes/Game/Levels/Level1.cs" />
         <option value="$PROJECT_DIR$/Views/FinalScore.cs" />
         <option value="$PROJECT_DIR$/MainGame.cs" />
         <option value="$PROJECT_DIR$/Classes/Controllers/user.cs" />
@@ -134,6 +139,12 @@
         <option value="$PROJECT_DIR$/Login.Designer.cs" />
         <option value="$PROJECT_DIR$/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Login.cs" />
+        <option value="$PROJECT_DIR$/Classes/Game/Graphics/Templates/Sprite.cs" />
+        <option value="$PROJECT_DIR$/Classes/Game/Levels/Level1.cs" />
+        <option value="$PROJECT_DIR$/Views/Top.Designer.cs" />
+        <option value="$PROJECT_DIR$/Classes/Controllers/Viewtop.cs" />
+        <option value="$PROJECT_DIR$/Views/Top.cs" />
+        <option value="$PROJECT_DIR$/Classes/Models/Viewtop.cs" />
       </list>
     </option>
   </component>
@@ -211,7 +222,7 @@
       <workItem from="1592714527670" duration="3511000" />
       <workItem from="1592843336182" duration="10109000" />
       <workItem from="1592877473914" duration="3347000" />
-      <workItem from="1592924852271" duration="12903000" />
+      <workItem from="1592924852271" duration="20026000" />
     </task>
     <task id="LOCAL-00001" summary="Hola ashiock">
       <created>1589761260196</created>
@@ -304,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592705110252</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="(T-T)">
+      <created>1592968017015</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1592968017015</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +362,8 @@
     <MESSAGE value="Skrrr" />
     <MESSAGE value="Ayuda cristo rey" />
     <MESSAGE value="A" />
-    <option name="LAST_COMMIT_MESSAGE" value="A" />
+    <MESSAGE value="(T-T)" />
+    <option name="LAST_COMMIT_MESSAGE" value="(T-T)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="198" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592965932206">
@@ -352,25 +371,25 @@
     </state>
     <state x="198" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1592965932206" />
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1589762863312" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1592967869710">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1592969235283">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592967869710" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592969235283" />
     <state width="1493" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592718995762" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1592967869710">
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1592969235283">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592967869710" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592969235283" />
     <state width="1493" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592718995762" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1592967869710">
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1592969235283">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592967869710" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592969235283" />
     <state width="1493" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592718995762" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1592967869710">
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1592969235283">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592967869710" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592969235283" />
     <state width="1493" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592718995762" />
     <state width="1493" height="288" key="GridCell.Tab.1.bottom" timestamp="1592714789242">
       <screen x="0" y="0" width="1536" height="824" />
@@ -457,10 +476,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1589781126205" />
-    <state x="321" y="128" key="Vcs.Push.Dialog.v2" timestamp="1592705137887">
+    <state x="321" y="128" key="Vcs.Push.Dialog.v2" timestamp="1592968030682">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="321" y="128" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592705137887" />
+    <state x="321" y="128" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592968030682" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592539843476" />
     <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592967948512">
       <screen x="0" y="0" width="1366" height="728" />

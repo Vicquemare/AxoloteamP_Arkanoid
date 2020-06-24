@@ -57,7 +57,7 @@ namespace Metronoid
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(
@@ -79,7 +79,7 @@ namespace Metronoid
             this.tableLayoutPanel2.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(72, 2);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel1.SetRowSpan(this.tableLayoutPanel2, 2);
@@ -104,7 +104,7 @@ namespace Metronoid
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (78)))), ((int) (((byte) (33)))),
                 ((int) (((byte) (33)))));
             this.button3.Location = new System.Drawing.Point(2, 280);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(132, 136);
             this.button3.TabIndex = 2;
@@ -123,7 +123,7 @@ namespace Metronoid
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (78)))), ((int) (((byte) (33)))),
                 ((int) (((byte) (33)))));
             this.button2.Location = new System.Drawing.Point(2, 141);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(132, 135);
             this.button2.TabIndex = 1;
@@ -143,7 +143,7 @@ namespace Metronoid
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (78)))), ((int) (((byte) (33)))),
                 ((int) (((byte) (33)))));
             this.button1.Location = new System.Drawing.Point(2, 2);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 135);
             this.button1.TabIndex = 0;
@@ -157,7 +157,7 @@ namespace Metronoid
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(700, 422);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainMenu";
             this.Text = "MainMenu";
             this.Load += new System.EventHandler(this.MainMenu_Load);
